@@ -1,0 +1,452 @@
+{
+  ".expo-verify/metadata.json": {
+    "mtime": 1788338303.4649167,
+    "seen": 1788338659.5107574,
+    "ast_hash": "4e9fdd0077cb179c65a42fe6a62492e9",
+    "semantic_hash": "4e9fdd0077cb179c65a42fe6a62492e9"
+  },
+  "App.tsx": {
+    "mtime": 1788337446.7347348,
+    "seen": 1788338659.5107574,
+    "ast_hash": "763eafe248fa110f32c6859b6cbd250a",
+    "semantic_hash": "763eafe248fa110f32c6859b6cbd250a"
+  },
+  "app.json": {
+    "mtime": 1788338264.8226514,
+    "seen": 1788338659.5107574,
+    "ast_hash": "621c1d3801a4fce96d67637f4cdf1f9b",
+    "semantic_hash": "621c1d3801a4fce96d67637f4cdf1f9b"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1788337446.7347348,
+    "seen": 1788338659.5107574,
+    "ast_hash": "29cf2b65fb4a75489a8383a7cdea521c",
+    "semantic_hash": "29cf2b65fb4a75489a8383a7cdea521c"
+  },
+  "index.ts": {
+    "mtime": 1788337135.9194076,
+    "seen": 1788338659.5107574,
+    "ast_hash": "33caa6d28d87fc7e637c033d0d7124b1",
+    "semantic_hash": "33caa6d28d87fc7e637c033d0d7124b1"
+  },
+  "package.json": {
+    "mtime": 1788338268.6485145,
+    "seen": 1788338659.5107574,
+    "ast_hash": "970a03ecc61d6572d89ac067c72e26fe",
+    "semantic_hash": "970a03ecc61d6572d89ac067c72e26fe"
+  },
+  "src/components/ui.tsx": {
+    "mtime": 1788338192.7628064,
+    "seen": 1788338659.5107574,
+    "ast_hash": "319599921d378e1622528124fe9ef6d3",
+    "semantic_hash": "319599921d378e1622528124fe9ef6d3"
+  },
+  "src/data/mockData.ts": {
+    "mtime": 1788337446.7552888,
+    "seen": 1788338659.5107574,
+    "ast_hash": "1ca9b1d9b57761f7a084c2ced8fe6728",
+    "semantic_hash": "1ca9b1d9b57761f7a084c2ced8fe6728"
+  },
+  "src/design-system/theme.ts": {
+    "mtime": 1788337446.750866,
+    "seen": 1788338659.5107574,
+    "ast_hash": "f536c325f7868b094a5df95366a343bc",
+    "semantic_hash": "f536c325f7868b094a5df95366a343bc"
+  },
+  "src/domain/models.ts": {
+    "mtime": 1788337446.750866,
+    "seen": 1788338659.5107574,
+    "ast_hash": "1e7a22c7768d1cd7d03824dc4be92be3",
+    "semantic_hash": "1e7a22c7768d1cd7d03824dc4be92be3"
+  },
+  "src/features/auth/LoginScreen.tsx": {
+    "mtime": 1788337615.7531238,
+    "seen": 1788338659.5107574,
+    "ast_hash": "813f8de5a63efa915288b8ee8288427d",
+    "semantic_hash": "813f8de5a63efa915288b8ee8288427d"
+  },
+  "src/features/auth/__tests__/schemas.test.ts": {
+    "mtime": 1788338206.4897256,
+    "seen": 1788338659.5107574,
+    "ast_hash": "8f2c8a3a5eeeb26188062fa54e42f8de",
+    "semantic_hash": "8f2c8a3a5eeeb26188062fa54e42f8de"
+  },
+  "src/features/auth/schemas.ts": {
+    "mtime": 1788337615.7531238,
+    "seen": 1788338659.5107574,
+    "ast_hash": "f2e24897d2a263e0c3ddba5070f8e409",
+    "semantic_hash": "f2e24897d2a263e0c3ddba5070f8e409"
+  },
+  "src/features/coach/CoachDashboardScreen.tsx": {
+    "mtime": 1788338343.4803703,
+    "seen": 1788338659.5107574,
+    "ast_hash": "4d5b71e72295498d6108460033be39b2",
+    "semantic_hash": "4d5b71e72295498d6108460033be39b2"
+  },
+  "src/features/coach/ManageTeamScreen.tsx": {
+    "mtime": 1788338231.2498276,
+    "seen": 1788338659.5107574,
+    "ast_hash": "67479329f8151d2e4c8e07f0b6e5001b",
+    "semantic_hash": "67479329f8151d2e4c8e07f0b6e5001b"
+  },
+  "src/features/competition/CompetitionScreen.tsx": {
+    "mtime": 1788338231.2498276,
+    "seen": 1788338659.5107574,
+    "ast_hash": "b216e0bf76c155fe35117994aba1b28c",
+    "semantic_hash": "b216e0bf76c155fe35117994aba1b28c"
+  },
+  "src/features/competition/GroupScreen.tsx": {
+    "mtime": 1788337940.5135708,
+    "seen": 1788338659.5107574,
+    "ast_hash": "13c9ca392dbd1f0298148dd34c90ca13",
+    "semantic_hash": "13c9ca392dbd1f0298148dd34c90ca13"
+  },
+  "src/features/competition/ScheduleScreen.tsx": {
+    "mtime": 1788338142.483862,
+    "seen": 1788338659.5107574,
+    "ast_hash": "d72471d6fb6c9382c7c130fe94719c4e",
+    "semantic_hash": "d72471d6fb6c9382c7c130fe94719c4e"
+  },
+  "src/features/content/ContentScreen.tsx": {
+    "mtime": 1788338231.2582505,
+    "seen": 1788338659.5107574,
+    "ast_hash": "78b908d8af2b5efb9acfd483a9a13694",
+    "semantic_hash": "78b908d8af2b5efb9acfd483a9a13694"
+  },
+  "src/features/favorites/FavoritesScreen.tsx": {
+    "mtime": 1788338015.5211542,
+    "seen": 1788338659.5107574,
+    "ast_hash": "4ab3c9d1e033ade070eb98d4f9698872",
+    "semantic_hash": "4ab3c9d1e033ade070eb98d4f9698872"
+  },
+  "src/features/home/HomeScreen.tsx": {
+    "mtime": 1788337615.7531238,
+    "seen": 1788338659.5107574,
+    "ast_hash": "4054bbaecd7ca22a9dba1d18fccbefee",
+    "semantic_hash": "4054bbaecd7ca22a9dba1d18fccbefee"
+  },
+  "src/features/matches/MatchDetailScreen.tsx": {
+    "mtime": 1788338015.5211542,
+    "seen": 1788338659.5107574,
+    "ast_hash": "b5425d659e906e4f688e09bfedc30cff",
+    "semantic_hash": "b5425d659e906e4f688e09bfedc30cff"
+  },
+  "src/features/navigation/MenuScreen.tsx": {
+    "mtime": 1788338142.4639604,
+    "seen": 1788338659.5107574,
+    "ast_hash": "98d9aab5a4aaba14e494672e28ff301f",
+    "semantic_hash": "98d9aab5a4aaba14e494672e28ff301f"
+  },
+  "src/features/news/NewsScreen.tsx": {
+    "mtime": 1788337615.7531238,
+    "seen": 1788338659.5107574,
+    "ast_hash": "b68e7d19a5fb498bc1d6591f04112e0d",
+    "semantic_hash": "b68e7d19a5fb498bc1d6591f04112e0d"
+  },
+  "src/features/teams/TeamDetailScreen.tsx": {
+    "mtime": 1788338015.5050862,
+    "seen": 1788338659.5107574,
+    "ast_hash": "863887072533613302c9ccd535cf240f",
+    "semantic_hash": "863887072533613302c9ccd535cf240f"
+  },
+  "src/navigation/RootNavigator.tsx": {
+    "mtime": 1788338192.7628064,
+    "seen": 1788338659.5107574,
+    "ast_hash": "214290e19e19b650afd9254debe6749c",
+    "semantic_hash": "214290e19e19b650afd9254debe6749c"
+  },
+  "src/navigation/types.ts": {
+    "mtime": 1788338157.059675,
+    "seen": 1788338659.5107574,
+    "ast_hash": "f550bd66d5b955dac5a1e692479e1354",
+    "semantic_hash": "f550bd66d5b955dac5a1e692479e1354"
+  },
+  "src/services/api/client.ts": {
+    "mtime": 1788338343.4920535,
+    "seen": 1788338659.5107574,
+    "ast_hash": "04193316b2c032fe0687d1f5e9c1549f",
+    "semantic_hash": "04193316b2c032fe0687d1f5e9c1549f"
+  },
+  "src/services/storage/session.ts": {
+    "mtime": 1788337446.7552888,
+    "seen": 1788338659.5107574,
+    "ast_hash": "fcc9a1a1e0b3053e5b52b75d10264624",
+    "semantic_hash": "fcc9a1a1e0b3053e5b52b75d10264624"
+  },
+  "src/store/appStore.ts": {
+    "mtime": 1788337446.7552888,
+    "seen": 1788338659.5107574,
+    "ast_hash": "a9653975fc8bfcf333bb7ccf3bd8154f",
+    "semantic_hash": "a9653975fc8bfcf333bb7ccf3bd8154f"
+  },
+  "tsconfig.json": {
+    "mtime": 1788338245.3532393,
+    "seen": 1788338659.5107574,
+    "ast_hash": "c1af1385b2f3d98e09b0c212601d86f6",
+    "semantic_hash": "c1af1385b2f3d98e09b0c212601d86f6"
+  },
+  "01_IMPLEMENTATION_PLAN.md": {
+    "mtime": 1788335678.742029,
+    "seen": 1788338659.5107574,
+    "ast_hash": "21b7a30d674eb246e7f56f0d1985460a",
+    "semantic_hash": "21b7a30d674eb246e7f56f0d1985460a"
+  },
+  "02_PRD.md": {
+    "mtime": 1788335684.9434402,
+    "seen": 1788338659.5107574,
+    "ast_hash": "96b5a9b9ca2eb345fe099ff646332389",
+    "semantic_hash": "96b5a9b9ca2eb345fe099ff646332389"
+  },
+  "03_TECHNICAL_DESIGN_REACT_NATIVE.md": {
+    "mtime": 1788335691.2267017,
+    "seen": 1788338659.5107574,
+    "ast_hash": "84250cb5a64ba1af9bd2f1809109fce8",
+    "semantic_hash": "84250cb5a64ba1af9bd2f1809109fce8"
+  },
+  "README.md": {
+    "mtime": 1788338343.494061,
+    "seen": 1788338659.5107574,
+    "ast_hash": "b52e6a147c32d24f3084f79b385d14be",
+    "semantic_hash": "b52e6a147c32d24f3084f79b385d14be"
+  },
+  "figma/Bottom Sheet Group.pdf": {
+    "mtime": 1788331787.0365489,
+    "seen": 1788338659.5107574,
+    "ast_hash": "7936cfe788bfbdaa6296ec4c1c5e8e7f",
+    "semantic_hash": "7936cfe788bfbdaa6296ec4c1c5e8e7f"
+  },
+  "figma/Bottom Sheet Team.pdf": {
+    "mtime": 1788331787.053364,
+    "seen": 1788338659.5107574,
+    "ast_hash": "b04bf1fde6aff07e77cceba80a2680c6",
+    "semantic_hash": "b04bf1fde6aff07e77cceba80a2680c6"
+  },
+  "figma/Bottom Sheet age.pdf": {
+    "mtime": 1788331787.0208137,
+    "seen": 1788338659.5107574,
+    "ast_hash": "428031315febef43f81f515965d884a7",
+    "semantic_hash": "428031315febef43f81f515965d884a7"
+  },
+  "figma/Bottom Sheet-1.pdf": {
+    "mtime": 1788331787.0766244,
+    "seen": 1788338659.5107574,
+    "ast_hash": "75eafcfc648adde04a34fbeba25402a5",
+    "semantic_hash": "75eafcfc648adde04a34fbeba25402a5"
+  },
+  "figma/Bottom Sheet-2.pdf": {
+    "mtime": 1788331786.8285682,
+    "seen": 1788338659.5107574,
+    "ast_hash": "0869bdaf781b45c3b11a7426283284c4",
+    "semantic_hash": "0869bdaf781b45c3b11a7426283284c4"
+  },
+  "figma/Bottom Sheet.pdf": {
+    "mtime": 1788331787.068591,
+    "seen": 1788338659.5107574,
+    "ast_hash": "cbf59b07ef0459b983d09dafb595b2b6",
+    "semantic_hash": "cbf59b07ef0459b983d09dafb595b2b6"
+  },
+  "figma/Coach Dashboard.pdf": {
+    "mtime": 1788331786.8519979,
+    "seen": 1788338659.5107574,
+    "ast_hash": "95f5dc0b2ca8e6f7f50ac01d52e08acd",
+    "semantic_hash": "95f5dc0b2ca8e6f7f50ac01d52e08acd"
+  },
+  "figma/Detail Match.pdf": {
+    "mtime": 1788331786.8687484,
+    "seen": 1788338659.5107574,
+    "ast_hash": "f29736d8ba36cebb132e932e32c96aa2",
+    "semantic_hash": "f29736d8ba36cebb132e932e32c96aa2"
+  },
+  "figma/Detail Team - Matches.pdf": {
+    "mtime": 1788331786.8807983,
+    "seen": 1788338659.5107574,
+    "ast_hash": "93b8ef850f6c8b491ff0c5d75ac24d52",
+    "semantic_hash": "93b8ef850f6c8b491ff0c5d75ac24d52"
+  },
+  "figma/Favorite Team.pdf": {
+    "mtime": 1788331786.8920047,
+    "seen": 1788338659.5107574,
+    "ast_hash": "2274e0eed8bb0897da78058c84367edb",
+    "semantic_hash": "2274e0eed8bb0897da78058c84367edb"
+  },
+  "figma/Home Page.pdf": {
+    "mtime": 1788331786.9081922,
+    "seen": 1788338659.5107574,
+    "ast_hash": "6fc460f37c6ec0cad3952030126261ae",
+    "semantic_hash": "6fc460f37c6ec0cad3952030126261ae"
+  },
+  "figma/Login.pdf": {
+    "mtime": 1788331786.9127645,
+    "seen": 1788338659.5107574,
+    "ast_hash": "47e5d8288bdad33e3960de19366c9055",
+    "semantic_hash": "47e5d8288bdad33e3960de19366c9055"
+  },
+  "figma/Manage Team-1.pdf": {
+    "mtime": 1788331786.9441414,
+    "seen": 1788338659.5107574,
+    "ast_hash": "145257305a3a8385a5c6950d9be9eede",
+    "semantic_hash": "145257305a3a8385a5c6950d9be9eede"
+  },
+  "figma/Manage Team.pdf": {
+    "mtime": 1788331786.9242423,
+    "seen": 1788338659.5107574,
+    "ast_hash": "1478079f1ddf7211ac0058e01759ecbd",
+    "semantic_hash": "1478079f1ddf7211ac0058e01759ecbd"
+  },
+  "figma/Matches group.pdf": {
+    "mtime": 1788331786.961705,
+    "seen": 1788338659.5107574,
+    "ast_hash": "c1b4ac1254e460044e7c82ebaf5a8072",
+    "semantic_hash": "c1b4ac1254e460044e7c82ebaf5a8072"
+  },
+  "figma/Sidebar.pdf": {
+    "mtime": 1788331786.9761057,
+    "seen": 1788338659.5107574,
+    "ast_hash": "beff1d285963c4f590bf458737d46371",
+    "semantic_hash": "beff1d285963c4f590bf458737d46371"
+  },
+  "figma/Table Group.pdf": {
+    "mtime": 1788331787.003429,
+    "seen": 1788338659.5107574,
+    "ast_hash": "137eebe42af6ff974ff0d480c0bed680",
+    "semantic_hash": "137eebe42af6ff974ff0d480c0bed680"
+  },
+  "assets/android-icon-background.png": {
+    "mtime": 1788337135.9059033,
+    "seen": 1788338659.5107574,
+    "ast_hash": "2d65569cc0e2afdcea0af9f9902d4173",
+    "semantic_hash": "2d65569cc0e2afdcea0af9f9902d4173"
+  },
+  "assets/android-icon-foreground.png": {
+    "mtime": 1788337135.9059033,
+    "seen": 1788338659.5107574,
+    "ast_hash": "72e71a9c846c6aa4ae32476641a00e18",
+    "semantic_hash": "72e71a9c846c6aa4ae32476641a00e18"
+  },
+  "assets/android-icon-monochrome.png": {
+    "mtime": 1788337135.9059033,
+    "seen": 1788338659.5107574,
+    "ast_hash": "1e097dab989759fc0b69440092ca22cd",
+    "semantic_hash": "1e097dab989759fc0b69440092ca22cd"
+  },
+  "assets/favicon.png": {
+    "mtime": 1788337135.9059033,
+    "seen": 1788338659.5107574,
+    "ast_hash": "d9f444efbdfbe7931aa93beada07318a",
+    "semantic_hash": "d9f444efbdfbe7931aa93beada07318a"
+  },
+  "assets/icon.png": {
+    "mtime": 1788337135.9194076,
+    "seen": 1788338659.5107574,
+    "ast_hash": "cb975bba2216ce10a60e6c0ffe9941a2",
+    "semantic_hash": "cb975bba2216ce10a60e6c0ffe9941a2"
+  },
+  "assets/splash-icon.png": {
+    "mtime": 1788337135.9194076,
+    "seen": 1788338659.5107574,
+    "ast_hash": "97dae5a0e62ad8551d8a31897b425e63",
+    "semantic_hash": "97dae5a0e62ad8551d8a31897b425e63"
+  },
+  "mockup/Bottom Sheet Group.png": {
+    "mtime": 1788336610.4010432,
+    "seen": 1788338659.5107574,
+    "ast_hash": "da23fe68067b6165bb5cf3bd07d8e50c",
+    "semantic_hash": "da23fe68067b6165bb5cf3bd07d8e50c"
+  },
+  "mockup/Bottom Sheet Team.png": {
+    "mtime": 1788336610.4080799,
+    "seen": 1788338659.5107574,
+    "ast_hash": "3244e432f0a3680515a0eb291c67fadf",
+    "semantic_hash": "3244e432f0a3680515a0eb291c67fadf"
+  },
+  "mockup/Bottom Sheet age.png": {
+    "mtime": 1788336610.3921995,
+    "seen": 1788338659.5107574,
+    "ast_hash": "b881def997515420e714bbcb395264ab",
+    "semantic_hash": "b881def997515420e714bbcb395264ab"
+  },
+  "mockup/Bottom Sheet-1.png": {
+    "mtime": 1788336610.2818437,
+    "seen": 1788338659.5107574,
+    "ast_hash": "5a9e3d763b4d5d7eb08602eab704d28e",
+    "semantic_hash": "5a9e3d763b4d5d7eb08602eab704d28e"
+  },
+  "mockup/Bottom Sheet-2.png": {
+    "mtime": 1788336610.29141,
+    "seen": 1788338659.5107574,
+    "ast_hash": "a881871d77e1e107688fde8df6a0bfcc",
+    "semantic_hash": "a881871d77e1e107688fde8df6a0bfcc"
+  },
+  "mockup/Bottom Sheet.png": {
+    "mtime": 1788336610.4158711,
+    "seen": 1788338659.5107574,
+    "ast_hash": "94f02d7c55de01af4e228dcb5b9ef02e",
+    "semantic_hash": "94f02d7c55de01af4e228dcb5b9ef02e"
+  },
+  "mockup/Coach Dashboard.png": {
+    "mtime": 1788336610.2967825,
+    "seen": 1788338659.5107574,
+    "ast_hash": "0bbf00f01604c18a99631b8d1357259b",
+    "semantic_hash": "0bbf00f01604c18a99631b8d1357259b"
+  },
+  "mockup/Detail Match.png": {
+    "mtime": 1788336610.3070576,
+    "seen": 1788338659.5107574,
+    "ast_hash": "1a8d39596f0769a61c30187d94efe2c5",
+    "semantic_hash": "1a8d39596f0769a61c30187d94efe2c5"
+  },
+  "mockup/Detail Team - Matches.png": {
+    "mtime": 1788336610.3167362,
+    "seen": 1788338659.5107574,
+    "ast_hash": "e3d7918697b860db9d455ea7a585ec8d",
+    "semantic_hash": "e3d7918697b860db9d455ea7a585ec8d"
+  },
+  "mockup/Favorite Team.png": {
+    "mtime": 1788336610.3247318,
+    "seen": 1788338659.5107574,
+    "ast_hash": "22433ea05acb3b2dbfef1350e5c14191",
+    "semantic_hash": "22433ea05acb3b2dbfef1350e5c14191"
+  },
+  "mockup/Home Page.png": {
+    "mtime": 1788336610.330822,
+    "seen": 1788338659.5107574,
+    "ast_hash": "1aa989e2cc5c7a521de489500484551c",
+    "semantic_hash": "1aa989e2cc5c7a521de489500484551c"
+  },
+  "mockup/Login.png": {
+    "mtime": 1788336610.339839,
+    "seen": 1788338659.5107574,
+    "ast_hash": "bb3bc5ed2a11e6ec14081297d6885601",
+    "semantic_hash": "bb3bc5ed2a11e6ec14081297d6885601"
+  },
+  "mockup/Manage Team-1.png": {
+    "mtime": 1788336610.3608913,
+    "seen": 1788338659.5107574,
+    "ast_hash": "0dfc2a8eb0c4d40e5a27a50a35c0f7c8",
+    "semantic_hash": "0dfc2a8eb0c4d40e5a27a50a35c0f7c8"
+  },
+  "mockup/Manage Team.png": {
+    "mtime": 1788336610.3510227,
+    "seen": 1788338659.5107574,
+    "ast_hash": "fab079b36c43d0fdfab5b5320a73be6a",
+    "semantic_hash": "fab079b36c43d0fdfab5b5320a73be6a"
+  },
+  "mockup/Matches group.png": {
+    "mtime": 1788336610.3688414,
+    "seen": 1788338659.5107574,
+    "ast_hash": "a67f9bac308b7bcd4aa81922e419fd99",
+    "semantic_hash": "a67f9bac308b7bcd4aa81922e419fd99"
+  },
+  "mockup/Sidebar.png": {
+    "mtime": 1788336610.376613,
+    "seen": 1788338659.5107574,
+    "ast_hash": "be06d4dd9ffefee7e19a8b433cce34f8",
+    "semantic_hash": "be06d4dd9ffefee7e19a8b433cce34f8"
+  },
+  "mockup/Table Group.png": {
+    "mtime": 1788336610.3861806,
+    "seen": 1788338659.5107574,
+    "ast_hash": "df4e1dd685cf1b8ef1bc9e746a4f919b",
+    "semantic_hash": "df4e1dd685cf1b8ef1bc9e746a4f919b"
+  }
+}

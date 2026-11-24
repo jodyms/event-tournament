@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1788366133543,
+      "tag": "0000_freezing_the_hunter",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1788452533543,
+      "tag": "0001_admin_prd",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793071787217,
+      "tag": "0002_first_preak",
+      "breakpoints": true
+    }
+  ]
+}

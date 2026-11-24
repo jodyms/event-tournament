@@ -1,0 +1,716 @@
+{
+  "communities": {
+    "0": [
+      "src_components_ui",
+      "src_components_ui_appheader",
+      "src_components_ui_badge",
+      "src_components_ui_emptystate",
+      "src_components_ui_iconbutton",
+      "src_components_ui_iconname",
+      "src_components_ui_matchcard",
+      "src_components_ui_matchfromid",
+      "src_components_ui_primarybutton",
+      "src_components_ui_score",
+      "src_components_ui_screen",
+      "src_components_ui_sectionheader",
+      "src_components_ui_segmentedtabs",
+      "src_components_ui_sheet",
+      "src_components_ui_styles",
+      "src_components_ui_teamcrest",
+      "src_components_ui_teamrow",
+      "src_data_mockdata_matchbyid",
+      "src_data_mockdata_matches",
+      "src_data_mockdata_news",
+      "src_data_mockdata_teambyid",
+      "src_data_mockdata_teams",
+      "src_design_system_theme",
+      "src_design_system_theme_colors",
+      "src_design_system_theme_fonts",
+      "src_design_system_theme_radius",
+      "src_design_system_theme_spacing",
+      "src_features_coach_coachdashboardscreen",
+      "src_features_coach_coachdashboardscreen_coachdashboardscreen",
+      "src_features_coach_coachdashboardscreen_inforow",
+      "src_features_coach_coachdashboardscreen_styles",
+      "src_features_competition_competitionscreen",
+      "src_features_competition_competitionscreen_agegroups",
+      "src_features_competition_competitionscreen_competitionscreen",
+      "src_features_competition_competitionscreen_groups",
+      "src_features_competition_competitionscreen_selectioncard",
+      "src_features_competition_competitionscreen_styles",
+      "src_features_competition_groupscreen",
+      "src_features_competition_groupscreen_fixtures",
+      "src_features_competition_groupscreen_groupscreen",
+      "src_features_competition_groupscreen_standings",
+      "src_features_competition_groupscreen_styles",
+      "src_features_competition_schedulescreen",
+      "src_features_competition_schedulescreen_schedulescreen",
+      "src_features_competition_schedulescreen_styles",
+      "src_features_content_contentscreen",
+      "src_features_content_contentscreen_content",
+      "src_features_content_contentscreen_contentscreen",
+      "src_features_content_contentscreen_styles",
+      "src_features_favorites_favoritesscreen",
+      "src_features_favorites_favoritesscreen_favoritesscreen",
+      "src_features_favorites_favoritesscreen_styles",
+      "src_features_home_homescreen",
+      "src_features_home_homescreen_homescreen",
+      "src_features_home_homescreen_quickactions",
+      "src_features_home_homescreen_styles",
+      "src_features_matches_matchdetailscreen",
+      "src_features_matches_matchdetailscreen_info",
+      "src_features_matches_matchdetailscreen_matchdetailscreen",
+      "src_features_matches_matchdetailscreen_styles",
+      "src_features_navigation_menuscreen",
+      "src_features_navigation_menuscreen_menuitem",
+      "src_features_navigation_menuscreen_menuscreen",
+      "src_features_navigation_menuscreen_styles",
+      "src_features_news_newsscreen",
+      "src_features_news_newsscreen_newsscreen",
+      "src_features_news_newsscreen_styles",
+      "src_features_teams_teamdetailscreen",
+      "src_features_teams_teamdetailscreen_styles",
+      "src_features_teams_teamdetailscreen_teamdetailscreen",
+      "src_navigation_rootnavigator",
+      "src_navigation_rootnavigator_icons",
+      "src_navigation_rootnavigator_maintabs",
+      "src_navigation_rootnavigator_stack",
+      "src_navigation_rootnavigator_tabs",
+      "src_navigation_types",
+      "src_navigation_types_maintabparamlist",
+      "src_navigation_types_rootstackparamlist"
+    ],
+    "1": [
+      "expo",
+      "expo_font",
+      "expo_google_fonts_plus_jakarta_sans",
+      "expo_linear_gradient",
+      "expo_secure_store",
+      "expo_splash_screen",
+      "expo_status_bar",
+      "expo_vector_icons",
+      "hookform_resolvers",
+      "package_dependencies",
+      "package_dependencies_expo",
+      "package_dependencies_expo_font",
+      "package_dependencies_expo_google_fonts_plus_jakarta_sans",
+      "package_dependencies_expo_linear_gradient",
+      "package_dependencies_expo_secure_store",
+      "package_dependencies_expo_splash_screen",
+      "package_dependencies_expo_status_bar",
+      "package_dependencies_expo_vector_icons",
+      "package_dependencies_hookform_resolvers",
+      "package_dependencies_react",
+      "package_dependencies_react_hook_form",
+      "package_dependencies_react_native",
+      "package_dependencies_react_native_async_storage_async_storage",
+      "package_dependencies_react_native_safe_area_context",
+      "package_dependencies_react_native_screens",
+      "package_dependencies_react_navigation_bottom_tabs",
+      "package_dependencies_react_navigation_native",
+      "package_dependencies_react_navigation_native_stack",
+      "package_dependencies_tanstack_react_query",
+      "package_dependencies_zod",
+      "package_dependencies_zustand",
+      "react",
+      "react_hook_form",
+      "react_native",
+      "react_native_async_storage_async_storage",
+      "react_native_safe_area_context",
+      "react_native_screens",
+      "react_navigation_bottom_tabs",
+      "react_navigation_native",
+      "react_navigation_native_stack",
+      "tanstack_react_query",
+      "zod",
+      "zustand"
+    ],
+    "2": [
+      "02_prd_coach_team_setup",
+      "02_prd_favorite_teams",
+      "02_prd_non_functional_requirements",
+      "02_prd_primary_user_journeys",
+      "02_prd_product_requirements",
+      "02_prd_secure_authentication",
+      "02_prd_target_users",
+      "03_technical_design_react_native_api_strategy",
+      "03_technical_design_react_native_navigation_architecture",
+      "03_technical_design_react_native_security_model",
+      "03_technical_design_react_native_server_state",
+      "03_technical_design_react_native_testing_strategy",
+      "figma_bottom_sheet_1_jersey_colours_form",
+      "figma_bottom_sheet_2_add_player_form",
+      "figma_bottom_sheet_confirm_coach_form",
+      "figma_bottom_sheet_team_team_selection",
+      "figma_coach_dashboard_assigned_team_selection",
+      "figma_coach_dashboard_coach_dashboard",
+      "figma_favorite_team_favorite_team_list",
+      "figma_login_login_form",
+      "figma_login_terms_consent",
+      "figma_manage_team_1_player_roster",
+      "figma_manage_team_setup_checklist",
+      "figma_manage_team_setup_progress",
+      "figma_manage_team_team_setup",
+      "figma_sidebar_app_version",
+      "figma_sidebar_side_drawer"
+    ],
+    "3": [
+      "app_adaptiveicon_backgroundcolor",
+      "app_adaptiveicon_backgroundimage",
+      "app_adaptiveicon_foregroundimage",
+      "app_adaptiveicon_monochromeimage",
+      "app_android_adaptiveicon",
+      "app_android_package",
+      "app_android_predictivebackgestureenabled",
+      "app_expo",
+      "app_expo_android",
+      "app_expo_icon",
+      "app_expo_ios",
+      "app_expo_name",
+      "app_expo_orientation",
+      "app_expo_plugins",
+      "app_expo_scheme",
+      "app_expo_slug",
+      "app_expo_userinterfacestyle",
+      "app_expo_version",
+      "app_expo_web",
+      "app_ios_bundleidentifier",
+      "app_ios_supportstablet",
+      "app_json_app",
+      "app_web_favicon",
+      "ref_expo_font",
+      "ref_expo_secure_store",
+      "ref_expo_splash_screen"
+    ],
+    "4": [
+      "01_implementation_plan_coach_experience",
+      "01_implementation_plan_development_phases",
+      "01_implementation_plan_kickzone_mobile_app",
+      "01_implementation_plan_product_modules",
+      "01_implementation_plan_product_risks",
+      "01_implementation_plan_public_competition_experience",
+      "01_implementation_plan_responsive_design_system",
+      "02_prd_competition_browsing",
+      "03_technical_design_react_native_design_system_translation",
+      "03_technical_design_react_native_feature_oriented_architecture",
+      "03_technical_design_react_native_live_match_strategy",
+      "03_technical_design_react_native_recommended_stack",
+      "figma_bottom_sheet_age_stage_group_selection",
+      "figma_bottom_sheet_group_age_group_selection",
+      "figma_detail_match_goal_events",
+      "figma_detail_match_match_detail",
+      "figma_detail_team_matches_team_detail",
+      "figma_detail_team_matches_team_detail_tabs",
+      "figma_home_page_home_dashboard",
+      "figma_home_page_live_hero",
+      "figma_home_page_matches_today",
+      "figma_home_page_quick_navigation",
+      "figma_matches_group_group_matches",
+      "figma_table_group_device_rotation_hint",
+      "figma_table_group_group_standings"
+    ],
+    "5": [
+      "app_app",
+      "app_navigationtheme",
+      "app_queryclient",
+      "app_styles",
+      "app_tsx_app",
+      "index",
+      "src_data_mockdata",
+      "src_data_mockdata_initialplayers",
+      "src_data_mockdata_standings",
+      "src_domain_models",
+      "src_domain_models_id",
+      "src_domain_models_match",
+      "src_domain_models_matchstatus",
+      "src_domain_models_newsarticle",
+      "src_domain_models_player",
+      "src_domain_models_session",
+      "src_domain_models_standingrow",
+      "src_domain_models_team",
+      "src_domain_models_user",
+      "src_domain_models_userrole",
+      "src_navigation_rootnavigator_rootnavigator",
+      "src_services_storage_session",
+      "src_services_storage_session_sessionstorage",
+      "src_store_appstore",
+      "src_store_appstore_appstate"
+    ],
+    "6": [
+      "eslint",
+      "eslint_js",
+      "eslint_plugin_react_hooks",
+      "jest",
+      "jest_expo",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_jest",
+      "package_devdependencies_jest_expo",
+      "package_devdependencies_testing_library_react_native",
+      "package_devdependencies_types_jest",
+      "package_devdependencies_types_react",
+      "package_devdependencies_typescript",
+      "package_devdependencies_typescript_eslint",
+      "testing_library_react_native",
+      "types_jest",
+      "types_react",
+      "typescript",
+      "typescript_eslint"
+    ],
+    "7": [
+      "src_components_ui_textfield",
+      "src_features_auth_loginscreen",
+      "src_features_auth_loginscreen_loginscreen",
+      "src_features_auth_loginscreen_styles",
+      "src_features_auth_schemas",
+      "src_features_auth_schemas_loginschema",
+      "src_features_auth_schemas_loginvalues",
+      "src_features_auth_tests_schemas_test",
+      "src_features_coach_manageteamscreen",
+      "src_features_coach_manageteamscreen_coachsheet",
+      "src_features_coach_manageteamscreen_detailtab",
+      "src_features_coach_manageteamscreen_jerseysheet",
+      "src_features_coach_manageteamscreen_manageteamscreen",
+      "src_features_coach_manageteamscreen_metric",
+      "src_features_coach_manageteamscreen_playersheet",
+      "src_features_coach_manageteamscreen_playerstab",
+      "src_features_coach_manageteamscreen_sheetkind",
+      "src_features_coach_manageteamscreen_styles",
+      "src_features_coach_manageteamscreen_taskrow",
+      "src_store_appstore_useappstore"
+    ],
+    "8": [
+      "package",
+      "package_jest",
+      "package_jest_preset",
+      "package_jest_testpathignorepatterns",
+      "package_json_ref_graphify_out",
+      "package_main",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_android",
+      "package_scripts_ios",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_scripts_test",
+      "package_scripts_typecheck",
+      "package_scripts_web",
+      "package_version",
+      "ref_node_modules"
+    ],
+    "9": [
+      "mockup_detail_match_football_fc",
+      "mockup_detail_match_goal_adjustment_controls",
+      "mockup_detail_match_goals_section",
+      "mockup_detail_match_jersey_15",
+      "mockup_detail_match_jersey_8",
+      "mockup_detail_match_kickball_fc",
+      "mockup_detail_match_match_detail_screen",
+      "mockup_detail_match_match_schedule",
+      "mockup_detail_match_score_6_1",
+      "mockup_detail_match_stadium_pitch_2",
+      "mockup_detail_match_u11_group_a",
+      "mockup_detail_match_ziqri_z",
+      "mockup_detail_match_zuhri"
+    ],
+    "10": [
+      "mockup_detail_team_matches_08_00_sat_18_july",
+      "mockup_detail_team_matches_favorite_team_action",
+      "mockup_detail_team_matches_football_fc",
+      "mockup_detail_team_matches_football_fc_6_kickball_fc_1",
+      "mockup_detail_team_matches_kickball_fc",
+      "mockup_detail_team_matches_kickball_fc_4_longball_fc_0",
+      "mockup_detail_team_matches_kickball_fc_team_detail",
+      "mockup_detail_team_matches_longball_fc",
+      "mockup_detail_team_matches_matches_tab",
+      "mockup_detail_team_matches_players_tab",
+      "mockup_detail_team_matches_stadium_pitch_1",
+      "mockup_detail_team_matches_stats_tab",
+      "mockup_detail_team_matches_u11_group_a"
+    ],
+    "11": [
+      "readme_api_contract_availability",
+      "readme_api_v1",
+      "readme_bundle_secret_safety",
+      "readme_dark_theme_design_tokens",
+      "readme_expo_public_api_url",
+      "readme_fan_and_coach_experience",
+      "readme_feature_modules",
+      "readme_kickzone_tournament_mobile",
+      "readme_local_demo_data",
+      "readme_mock_data_module",
+      "readme_react_native_expo_frontend",
+      "readme_rest_api_client",
+      "readme_reusable_ui_components"
+    ],
+    "12": [
+      "ref_expo_tsconfig_base",
+      "ref_figma",
+      "ref_jest",
+      "ref_mockup",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_nouncheckedindexedaccess",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_types",
+      "tsconfig_exclude",
+      "tsconfig_extends",
+      "tsconfig_json_ref_graphify_out"
+    ],
+    "13": [
+      "mockup_coach_dashboard_coach_dashboard",
+      "mockup_coach_dashboard_football_fc",
+      "mockup_coach_dashboard_kickball_fc",
+      "mockup_coach_dashboard_longball_fc",
+      "mockup_coach_dashboard_pitch",
+      "mockup_coach_dashboard_select_team_to_manage",
+      "mockup_coach_dashboard_tournament_rules",
+      "mockup_coach_dashboard_u11",
+      "mockup_coach_dashboard_u17",
+      "mockup_coach_dashboard_u19"
+    ],
+    "14": [
+      "mockup_table_group_goal_difference_metric",
+      "mockup_table_group_group_standings_table",
+      "mockup_table_group_group_table_screen",
+      "mockup_table_group_landscape_table_hint",
+      "mockup_table_group_matches_played_metric",
+      "mockup_table_group_more_groups_navigation",
+      "mockup_table_group_points_metric",
+      "mockup_table_group_table_matches_tabs",
+      "mockup_table_group_team_standing_row"
+    ],
+    "15": [
+      "mockup_bottom_sheet_team_baseball_bears",
+      "mockup_bottom_sheet_team_basketball_blazers",
+      "mockup_bottom_sheet_team_kickball_fc",
+      "mockup_bottom_sheet_team_search_team_field",
+      "mockup_bottom_sheet_team_soccer_stars",
+      "mockup_bottom_sheet_team_team_selection_bottom_sheet",
+      "mockup_bottom_sheet_team_u11_age_badge",
+      "mockup_bottom_sheet_team_volleyball_vipers"
+    ],
+    "16": [
+      "mockup_home_page_certificate_action",
+      "mockup_home_page_home_dashboard",
+      "mockup_home_page_live_match_report",
+      "mockup_home_page_match_engagement_metrics",
+      "mockup_home_page_matches_today_carousel",
+      "mockup_home_page_primary_bottom_navigation",
+      "mockup_home_page_quick_actions"
+    ],
+    "17": [
+      "mockup_manage_team_1_detail_player_tabs",
+      "mockup_manage_team_1_jersey_number",
+      "mockup_manage_team_1_player_card",
+      "mockup_manage_team_1_player_position_badge",
+      "mockup_manage_team_1_player_roster",
+      "mockup_manage_team_1_team_identity_hero",
+      "mockup_manage_team_1_team_player_screen"
+    ],
+    "18": [
+      "mockup_manage_team_confirm_coach_names",
+      "mockup_manage_team_detail_player_tabs",
+      "mockup_manage_team_register_players",
+      "mockup_manage_team_set_jersey_colours",
+      "mockup_manage_team_team_detail_screen",
+      "mockup_manage_team_team_overview",
+      "mockup_manage_team_team_setup_progress"
+    ],
+    "19": [
+      "mockup_matches_group_group_matches_screen",
+      "mockup_matches_group_match_card",
+      "mockup_matches_group_match_schedule",
+      "mockup_matches_group_match_score",
+      "mockup_matches_group_match_venue",
+      "mockup_matches_group_table_matches_tabs",
+      "mockup_matches_group_team_matchup"
+    ],
+    "20": [
+      "mockup_bottom_sheet_1_away_jersey_colour",
+      "mockup_bottom_sheet_1_football_fc",
+      "mockup_bottom_sheet_1_home_jersey_colour",
+      "mockup_bottom_sheet_1_jersey_colours_form",
+      "mockup_bottom_sheet_1_save_action",
+      "mockup_bottom_sheet_1_yellow"
+    ],
+    "21": [
+      "mockup_bottom_sheet_2_add_player_form",
+      "mockup_bottom_sheet_2_player_name",
+      "mockup_bottom_sheet_2_player_number",
+      "mockup_bottom_sheet_2_player_position",
+      "mockup_bottom_sheet_2_save_player_action",
+      "mockup_bottom_sheet_2_sultan_shikii"
+    ],
+    "22": [
+      "mockup_bottom_sheet_abu_yunandar",
+      "mockup_bottom_sheet_coach_1",
+      "mockup_bottom_sheet_coach_2",
+      "mockup_bottom_sheet_coach_pass_recipient",
+      "mockup_bottom_sheet_confirm_coach_form",
+      "mockup_bottom_sheet_save_coaches_action"
+    ],
+    "23": [
+      "mockup_bottom_sheet_age_group_stages",
+      "mockup_bottom_sheet_age_playoff_stages",
+      "mockup_bottom_sheet_age_u11_cup",
+      "mockup_bottom_sheet_age_u11_group_a",
+      "mockup_bottom_sheet_age_u11_group_b",
+      "mockup_bottom_sheet_age_under_11_stage_selection"
+    ],
+    "24": [
+      "mockup_login_legal_consent",
+      "mockup_login_login_action",
+      "mockup_login_login_credentials_form",
+      "mockup_login_login_screen",
+      "mockup_login_onboarding_pagination",
+      "mockup_login_sports_hero_image"
+    ],
+    "25": [
+      "mockup_sidebar_app_version",
+      "mockup_sidebar_coach_dashboard_navigation",
+      "mockup_sidebar_favorite_team_navigation",
+      "mockup_sidebar_logout_action",
+      "mockup_sidebar_navigation_drawer",
+      "mockup_sidebar_tyc_brand"
+    ],
+    "26": [
+      "mockup_bottom_sheet_group_age_group_selection_bottom_sheet",
+      "mockup_bottom_sheet_group_forward_navigation_affordance",
+      "mockup_bottom_sheet_group_under_11",
+      "mockup_bottom_sheet_group_under_13",
+      "mockup_bottom_sheet_group_under_15"
+    ],
+    "27": [
+      "mockup_favorite_team_add_team_action",
+      "mockup_favorite_team_age_division_badge",
+      "mockup_favorite_team_favorite_team_list",
+      "mockup_favorite_team_team_detail_navigation",
+      "mockup_favorite_team_team_favorite_screen"
+    ],
+    "28": [
+      "src_services_api_client",
+      "src_services_api_client_apierror",
+      "src_services_api_client_apierror_constructor",
+      "src_services_api_client_apifetch"
+    ],
+    "29": [
+      "readme_android_expo_go",
+      "readme_demo_account_validation",
+      "readme_development_commands"
+    ],
+    "30": [
+      "assets_android_icon_background_adaptive_icon_background_guide"
+    ],
+    "31": [
+      "assets_android_icon_foreground_tournament_app_icon_foreground"
+    ],
+    "32": [
+      "assets_android_icon_monochrome_tournament_app_monochrome_icon"
+    ],
+    "33": [
+      "assets_favicon_app_icon"
+    ],
+    "34": [
+      "assets_icon_app_logo"
+    ],
+    "35": [
+      "assets_splash_icon_splash_placeholder"
+    ],
+    "36": [
+      "eslint_config"
+    ],
+    "37": [
+      "readme_quality_checks"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08191808191808192,
+    "1": 0.046511627906976744,
+    "2": 0.09686609686609686,
+    "3": 0.07692307692307693,
+    "4": 0.1,
+    "5": 0.13666666666666666,
+    "6": 0.09523809523809523,
+    "7": 0.15789473684210525,
+    "8": 0.1111111111111111,
+    "9": 0.15384615384615385,
+    "10": 0.1794871794871795,
+    "11": 0.16666666666666666,
+    "12": 0.16666666666666666,
+    "13": 0.2,
+    "14": 0.2222222222222222,
+    "15": 0.39285714285714285,
+    "16": 0.2857142857142857,
+    "17": 0.2857142857142857,
+    "18": 0.2857142857142857,
+    "19": 0.2857142857142857,
+    "20": 0.4,
+    "21": 0.4,
+    "22": 0.3333333333333333,
+    "23": 0.3333333333333333,
+    "24": 0.3333333333333333,
+    "25": 0.3333333333333333,
+    "26": 0.4,
+    "27": 0.4,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_store_appstore_useappstore",
+      "label": "useAppStore",
+      "degree": 20
+    },
+    {
+      "id": "src_design_system_theme_colors",
+      "label": "colors",
+      "degree": 17
+    },
+    {
+      "id": "src_design_system_theme_spacing",
+      "label": "spacing",
+      "degree": 15
+    },
+    {
+      "id": "src_design_system_theme_fonts",
+      "label": "fonts",
+      "degree": 15
+    },
+    {
+      "id": "src_design_system_theme_radius",
+      "label": "radius",
+      "degree": 14
+    },
+    {
+      "id": "src_components_ui_screen",
+      "label": "Screen()",
+      "degree": 13
+    },
+    {
+      "id": "src_components_ui_appheader",
+      "label": "AppHeader()",
+      "degree": 13
+    },
+    {
+      "id": "src_navigation_types_rootstackparamlist",
+      "label": "RootStackParamList",
+      "degree": 13
+    },
+    {
+      "id": "app_expo",
+      "label": "expo",
+      "degree": 12
+    },
+    {
+      "id": "src_data_mockdata_teambyid",
+      "label": "teamById()",
+      "degree": 12
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Coach Experience",
+      "target": "Coach Team Setup",
+      "source_files": [
+        "01_IMPLEMENTATION_PLAN.md",
+        "02_PRD.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Stage and Group Selection Sheet",
+      "target": "Competition Browsing",
+      "source_files": [
+        "figma/Bottom Sheet age.pdf",
+        "02_PRD.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; peripheral node `Stage and Group Selection Sheet` unexpectedly reaches hub `Competition Browsing`"
+    },
+    {
+      "source": "Age Group Selection Sheet",
+      "target": "Competition Browsing",
+      "source_files": [
+        "figma/Bottom Sheet Group.pdf",
+        "02_PRD.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; peripheral node `Age Group Selection Sheet` unexpectedly reaches hub `Competition Browsing`"
+    },
+    {
+      "source": "Jersey Colours Form",
+      "target": "Coach Team Setup",
+      "source_files": [
+        "figma/Bottom Sheet-1.pdf",
+        "02_PRD.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; peripheral node `Jersey Colours Form` unexpectedly reaches hub `Coach Team Setup`"
+    },
+    {
+      "source": "Confirm Coach Form",
+      "target": "Coach Team Setup",
+      "source_files": [
+        "figma/Bottom Sheet.pdf",
+        "02_PRD.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ paper); connects across different repos/directories; peripheral node `Confirm Coach Form` unexpectedly reaches hub `Coach Team Setup`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `expo-secure-store` connect `Community 3` to `Community 5`?",
+      "why": "High betweenness centrality (0.031) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `queryClient`, `navigationTheme`, `styles` to the rest of the system?",
+      "why": "196 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08191808191808192 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09686609686609686 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 4` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

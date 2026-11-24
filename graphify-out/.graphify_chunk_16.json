@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "mockup_matches_group_group_matches_screen",
+      "label": "U11 Group A Matches Screen",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_matches_group_table_matches_tabs",
+      "label": "Table and Matches Tabs",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_matches_group_match_card",
+      "label": "Group Match Card",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_matches_group_match_venue",
+      "label": "Match Venue",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_matches_group_match_schedule",
+      "label": "Match Date and Time",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_matches_group_team_matchup",
+      "label": "Team Matchup",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_matches_group_match_score",
+      "label": "Match Score",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "mockup_matches_group_group_matches_screen",
+      "target": "mockup_matches_group_table_matches_tabs",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_matches_group_group_matches_screen",
+      "target": "mockup_matches_group_match_card",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_matches_group_match_card",
+      "target": "mockup_matches_group_match_venue",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_matches_group_match_card",
+      "target": "mockup_matches_group_match_schedule",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_matches_group_match_card",
+      "target": "mockup_matches_group_team_matchup",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_matches_group_match_card",
+      "target": "mockup_matches_group_match_score",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "mockup_matches_group_match_summary_pattern",
+      "label": "Match Summary Pattern",
+      "nodes": [
+        "mockup_matches_group_match_venue",
+        "mockup_matches_group_match_schedule",
+        "mockup_matches_group_team_matchup",
+        "mockup_matches_group_match_score"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Matches group.png"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,7 @@
+C:\Users\Jody\Desktop\event-tournament\README.md
+C:\Users\Jody\Desktop\event-tournament\assets\android-icon-background.png
+C:\Users\Jody\Desktop\event-tournament\assets\android-icon-foreground.png
+C:\Users\Jody\Desktop\event-tournament\assets\android-icon-monochrome.png
+C:\Users\Jody\Desktop\event-tournament\assets\favicon.png
+C:\Users\Jody\Desktop\event-tournament\assets\icon.png
+C:\Users\Jody\Desktop\event-tournament\assets\splash-icon.png

@@ -1,0 +1,501 @@
+﻿Task name,Assignee,Attach file,Description,Due date,Effort level,Parent task,Priority,Status,Sub-task,Task type,Updated at
+Manajemen Turnamen (Tournament Setup),,,Change header text to better reflect our latest product offerings.,02/03/2025,,,,To Do,"Admin dapat membuat turnamen baru dengan field: Nama Turnamen, Logo/Banner, Tanggal Mulai, Tanggal Selesai, Deskripsi. (Admin%20dapat%20membuat%20turnamen%20baru%20dengan%20field%20Nam%203c9c312cb49f800a86e2cbc7be6c0fe2.csv), Admin dapat mengubah status turnamen: Draft, Published (aktif), Selesai/Archived. (Admin%20dapat%20mengubah%20status%20turnamen%20Draft,%20Publis%203c9c312cb49f80278a40f01678ab0ee9.csv), Turnamen dengan status ""Draft"" tidak tampil di aplikasi mobile. (Turnamen%20dengan%20status%20Draft%20tidak%20tampil%20di%20aplik%203c9c312cb49f80698532c3b1178edf23.csv), Admin dapat mengedit dan menghapus turnamen yang belum berjalan (tidak ada data hasil pertandingan terkait). (Admin%20dapat%20mengedit%20dan%20menghapus%20turnamen%20yang%20b%203c9c312cb49f80a6858fc1ff27878a92.csv), Sistem menampilkan validasi jika tanggal selesai lebih awal dari tanggal mulai. (Sistem%20menampilkan%20validasi%20jika%20tanggal%20selesai%20l%203c9c312cb49f8033832dc2c798d87cc2.csv), List turnamen ditampilkan dalam tabel dengan fitur pencarian, filter status, dan pagination. (List%20turnamen%20ditampilkan%20dalam%20tabel%20dengan%20fitur%203c9c312cb49f804fbb6dd1213595e6f2.csv)",Web,"August 27, 2026 4:43 PM"
+Manajemen Grup & Babak (Group Stage / Playoff Stage),,,Update support documents to reflect new product releases.,02/20/2025,,,,To Do,"Admin dapat membuat Grup baru di bawah kategori usia tertentu (contoh: U11 Group A) dan menentukan tipe: Group Stage atau Playoff/Cup Stage.
+ (Admin%20dapat%20membuat%20Grup%20baru%20di%20bawah%20kategori%20us%203c9c312cb49f80f78a40d20a731f831e.csv), Admin dapat menambahkan/menghapus tim ke dalam suatu grup.
+ (Admin%20dapat%20menambahkan%20menghapus%20tim%20ke%20dalam%20sua%203c9c312cb49f8002b3dadd082e0ec0fb.csv), Sistem otomatis menghitung dan menampilkan tabel klasemen (Team, Played, Goal Difference, Points) berdasarkan hasil pertandingan yang sudah diinput — sesuai tampilan ""UI1 Group A – Table"".
+ (Sistem%20otomatis%20menghitung%20dan%20menampilkan%20tabel%20k%203c9c312cb49f8062b3f4d897ceec8a9a.csv), Admin dapat mengurutkan/override urutan klasemen secara manual jika diperlukan (misal untuk kasus tie-breaker khusus).
+ (Admin%20dapat%20mengurutkan%20override%20urutan%20klasemen%20s%203c9c312cb49f80168087d85d591609a0.csv), Admin dapat melihat daftar pertandingan (matches) di dalam grup tersebut — sesuai tab ""Matches"" pada mobile.
+ (Admin%20dapat%20melihat%20daftar%20pertandingan%20(matches)%20%203c9c312cb49f80818de9dfb6e073537a.csv)",Web,"August 27, 2026 3:05 PM"
+Manajemen Tim (Teams),,,Include product updates in next release note.,02/28/2025,,,,To Do,"Admin dapat menambah tim baru dengan field: Nama Tim, Logo, Jenis Olahraga (mendukung multi-sport: Football, Basketball, Baseball, Volleyball, dll.), Kategori Usia, Grup.
+ (Admin%20dapat%20menambah%20tim%20baru%20dengan%20field%20Nama%20Ti%203c9c312cb49f80629807f51b08474c08.csv), Admin dapat mengatur warna/jersey Home & Away tim (field ini juga dapat di-submit oleh coach melalui mobile, dan berstatus ""pending review"" sampai disetujui admin) — selaras dengan fitur ""Set Jersey Colours"" di Coach Dashboard.
+ (Admin%20dapat%20mengatur%20warna%20jersey%20Home%20&%20Away%20tim%20%203c9c312cb49f80c2a4bdf215160a11a1.csv), Admin dapat melihat & mengelola daftar pemain per tim (relasi ke modul Pemain).
+ (Admin%20dapat%20melihat%20&%20mengelola%20daftar%20pemain%20per%20%203c9c312cb49f80eb860dd3c3d5a9b2b7.csv), Admin dapat melihat statistik tim otomatis (Total Matches, Matches Won, Goals Scored) yang ter-generate dari data pertandingan — sesuai tab ""Stats"" pada mobile.
+ (Admin%20dapat%20melihat%20statistik%20tim%20otomatis%20(Total%20%203c9c312cb49f80229d9cdb7a7f72d2c4.csv), Fitur pencarian tim by nama, filter by kategori usia/grup/sport.
+ (Fitur%20pencarian%20tim%20by%20nama,%20filter%20by%20kategori%20us%203c9c312cb49f80fda7d5c4544cba4fda.csv), Admin dapat menonaktifkan/menghapus tim yang mengundurkan diri, dengan validasi jika tim tersebut sudah punya jadwal pertandingan.
+ (Admin%20dapat%20menonaktifkan%20menghapus%20tim%20yang%20mengu%203c9c312cb49f8035a224e646ad4b9258.csv)",Web,"August 27, 2026 3:12 PM"
+Manajemen Kategori Usia (Age Group),,,,,,,,To Do,"Admin dapat menambah, mengubah, dan menghapus kategori usia dalam sebuah turnamen. (Admin%20dapat%20menambah,%20mengubah,%20dan%20menghapus%20kate%203c9c312cb49f80a59e27da340d36e2c4.csv), Setiap kategori usia memiliki nama (contoh: ""Under 11"") dan urutan tampil (sort order). (Setiap%20kategori%20usia%20memiliki%20nama%20(contoh%20Under%201%203c9c312cb49f80e4a79dfb68216a6b98.csv), Admin tidak dapat menghapus kategori usia yang sudah memiliki grup/tim terdaftar (sistem menampilkan peringatan). (Admin%20tidak%20dapat%20menghapus%20kategori%20usia%20yang%20sud%203c9c312cb49f80cb812de4f3d2670633.csv), Kategori usia yang dibuat otomatis muncul sebagai pilihan saat membuat Grup/Stage baru. (Kategori%20usia%20yang%20dibuat%20otomatis%20muncul%20sebagai%20%203c9c312cb49f80aa893df4a1712450ef.csv)",Web,"August 27, 2026 4:42 PM"
+Figma,,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,"Untitled (Untitled%203c1c312cb49f8005aed8e4c0f3f8cdca.csv), Tampilan Auth (Tampilan%20Auth%203c1c312cb49f806586b8ece42d9cd7f8.csv)",,"August 27, 2026 4:43 PM"
+"Autentikasi & Manajemen Akun Admin
+",,,,,,,,To Do,"Figma (Figma%203c1c312cb49f80f0a350c3c6f317d7b0.csv), Given admin membuka halaman login, When memasukkan email & password yang valid, Then admin diarahkan ke Dashboard. (Given%20admin%20membuka%20halaman%20login,%20When%20memasukkan%203c9c312cb49f8089a7c5f375ff7f4858.csv), Given kredensial salah, When submit login, Then sistem menampilkan pesan error tanpa menyebutkan field mana yang salah (email/password). (Given%20kredensial%20salah,%20When%20submit%20login,%20Then%20si%203c9c312cb49f80d88063e44419a9c881.csv), Given admin belum login, When mengakses URL internal secara langsung, Then sistem redirect ke halaman login. (Given%20admin%20belum%20login,%20When%20mengakses%20URL%20intern%203c9c312cb49f80078d02f873ff546a07.csv), Sistem menyediakan fitur ""Lupa Password"" via email reset link.
+ (Sistem%20menyediakan%20fitur%20Lupa%20Password%20via%20email%20r%203c9c312cb49f8079a704d47f87d9b9a9.csv), Admin dapat memiliki role berbeda (Super Admin, Operator) dengan hak akses modul yang berbeda. (Admin%20dapat%20memiliki%20role%20berbeda%20(Super%20Admin,%20Op%203c9c312cb49f80cb8318c13e75adf9e3.csv), Sesi login otomatis berakhir (logout) setelah periode tidak aktif tertentu (session timeout). (Sesi%20login%20otomatis%20berakhir%20(logout)%20setelah%20peri%203c9c312cb49f808ab455db3774ba4215.csv)",Web,"August 27, 2026 4:43 PM"
+,,,,,,Figma (Figma%203c1c312cb49f80f0a350c3c6f317d7b0.csv),,In progress,,,"August 19, 2026 4:24 PM"
+Manajemen Coach (Pelatih) & Persetujuan Data Tim,,,,,,,,To Do,"Admin dapat melihat daftar tim beserta status kelengkapan setup: Confirm Coach (✓/pending), Jersey Colours (✓/pending), Player Registration (✓/warning jika kuota belum terpenuhi).
+ (Admin%20dapat%20melihat%20daftar%20tim%20beserta%20status%20kele%203c9c312cb49f80e79c5ad98ce87f845b.csv), Admin dapat meng-assign satu atau lebih akun Coach ke tim tertentu agar coach tersebut dapat mengelola tim itu dari mobile.
+ (Admin%20dapat%20meng-assign%20satu%20atau%20lebih%20akun%20Coach%203c9c312cb49f80a7bdbdf873415cc8fe.csv), Admin dapat melihat & mengedit nama Coach 1/Coach 2 yang diajukan, serta menyetujui atau menolak (dengan catatan alasan) pengajuan tersebut.
+ (Admin%20dapat%20melihat%20&%20mengedit%20nama%20Coach%201%20Coach%20%203c9c312cb49f8022a129c6925a68bc50.csv), Admin dapat mengatur ""Max Squad Size"" per tim, dan sistem menghitung otomatis ""Slots Remaining"" berdasarkan jumlah pemain terdaftar — selaras dengan bagian ""Overview"" pada Coach Dashboard mobile.
+ (Admin%20dapat%20mengatur%20Max%20Squad%20Size%20per%20tim,%20dan%20s%203c9c312cb49f80acbc80e6fad39c6cdc.csv), Sistem mengirim notifikasi ke Coach jika pengajuan ditolak/perlu revisi.
+ (Sistem%20mengirim%20notifikasi%20ke%20Coach%20jika%20pengajuan%203c9c312cb49f804dbe59f23892dd326d.csv)",Web,"August 27, 2026 4:42 PM"
+Tampilan Auth,,,,,,Figma (Figma%203c1c312cb49f80f0a350c3c6f317d7b0.csv),,To Do,,,"August 19, 2026 4:51 PM"
+Manajemen Pemain (Players),,,,,,,,To Do,"Admin dapat menambah, mengedit, dan menghapus data pemain dengan field: Nama, Foto, Posisi, Nomor Punggung, Tim.
+ (Admin%20dapat%20menambah,%20mengedit,%20dan%20menghapus%20data%203c9c312cb49f80a2bd08c61e49f95609.csv), Sistem memvalidasi agar nomor punggung tidak duplikat dalam satu tim.
+ (Sistem%20memvalidasi%20agar%20nomor%20punggung%20tidak%20dupli%203c9c312cb49f8051a849c8ce2fb0ad40.csv), Admin dapat melihat dan menyetujui/menolak pendaftaran pemain baru yang diajukan Coach dari mobile.
+ (Admin%20dapat%20melihat%20dan%20menyetujui%20menolak%20pendaft%203c9c312cb49f807e925ed1991c6e6d89.csv), Admin dapat memindahkan pemain antar tim (transfer) dengan riwayat perubahan tercatat.
+ (Admin%20dapat%20memindahkan%20pemain%20antar%20tim%20(transfer%203c9c312cb49f80248e19dfb7ae31ac96.csv), List pemain dapat difilter berdasarkan tim, kategori usia, dan dicari berdasarkan nama.
+ (List%20pemain%20dapat%20difilter%20berdasarkan%20tim,%20katego%203c9c312cb49f804cab89e1d783eb8747.csv)",Web,"August 27, 2026 4:42 PM"
+"Given admin membuka halaman login, When memasukkan email & password yang valid, Then admin diarahkan ke Dashboard.",,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,,,"August 27, 2026 4:43 PM"
+"Given kredensial salah, When submit login, Then sistem menampilkan pesan error tanpa menyebutkan field mana yang salah (email/password).",,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,,,"August 27, 2026 4:43 PM"
+"Given admin belum login, When mengakses URL internal secara langsung, Then sistem redirect ke halaman login.",,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,,,"August 27, 2026 4:43 PM"
+"Sistem menyediakan fitur ""Lupa Password"" via email reset link.
+",,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,,,"August 27, 2026 4:43 PM"
+"Admin dapat memiliki role berbeda (Super Admin, Operator) dengan hak akses modul yang berbeda.",,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,,,"August 28, 2026 10:59 AM"
+Sesi login otomatis berakhir (logout) setelah periode tidak aktif tertentu (session timeout).,,,,,,"Autentikasi & Manajemen Akun Admin
+ (Autentikasi%20&%20Manajemen%20Akun%20Admin%203c1c312cb49f801c80e0ccdf7fd08139.csv)",,To Do,,,"August 27, 2026 4:43 PM"
+"Admin dapat membuat turnamen baru dengan field: Nama Turnamen, Logo/Banner, Tanggal Mulai, Tanggal Selesai, Deskripsi.",,,,,,Manajemen Turnamen (Tournament Setup) (Manajemen%20Turnamen%20(Tournament%20Setup)%203c1c312cb49f80a49e24febff019bcb8.csv),,To Do,,,"August 27, 2026 4:43 PM"
+"Admin dapat mengubah status turnamen: Draft, Published (aktif), Selesai/Archived.",,,,,,Manajemen Turnamen (Tournament Setup) (Manajemen%20Turnamen%20(Tournament%20Setup)%203c1c312cb49f80a49e24febff019bcb8.csv),,To Do,,,"August 27, 2026 4:43 PM"
+"Turnamen dengan status ""Draft"" tidak tampil di aplikasi mobile.",,,,,,Manajemen Turnamen (Tournament Setup) (Manajemen%20Turnamen%20(Tournament%20Setup)%203c1c312cb49f80a49e24febff019bcb8.csv),,To Do,,,"August 27, 2026 4:43 PM"
+Admin dapat mengedit dan menghapus turnamen yang belum berjalan (tidak ada data hasil pertandingan terkait).,,,,,,Manajemen Turnamen (Tournament Setup) (Manajemen%20Turnamen%20(Tournament%20Setup)%203c1c312cb49f80a49e24febff019bcb8.csv),,To Do,,,"August 27, 2026 4:43 PM"
+Sistem menampilkan validasi jika tanggal selesai lebih awal dari tanggal mulai.,,,,,,Manajemen Turnamen (Tournament Setup) (Manajemen%20Turnamen%20(Tournament%20Setup)%203c1c312cb49f80a49e24febff019bcb8.csv),,To Do,,,"August 27, 2026 4:43 PM"
+"List turnamen ditampilkan dalam tabel dengan fitur pencarian, filter status, dan pagination.",,,,,,Manajemen Turnamen (Tournament Setup) (Manajemen%20Turnamen%20(Tournament%20Setup)%203c1c312cb49f80a49e24febff019bcb8.csv),,To Do,,,"August 27, 2026 4:43 PM"
+"Admin dapat menambah, mengubah, dan menghapus kategori usia dalam sebuah turnamen.",,,,,,Manajemen Kategori Usia (Age Group) (Manajemen%20Kategori%20Usia%20(Age%20Group)%203c1c312cb49f802e8feae0e3dc2a788d.csv),,To Do,,,"August 27, 2026 3:02 PM"
+"Setiap kategori usia memiliki nama (contoh: ""Under 11"") dan urutan tampil (sort order).",,,,,,Manajemen Kategori Usia (Age Group) (Manajemen%20Kategori%20Usia%20(Age%20Group)%203c1c312cb49f802e8feae0e3dc2a788d.csv),,To Do,,,"August 27, 2026 3:03 PM"
+Admin tidak dapat menghapus kategori usia yang sudah memiliki grup/tim terdaftar (sistem menampilkan peringatan).,,,,,,Manajemen Kategori Usia (Age Group) (Manajemen%20Kategori%20Usia%20(Age%20Group)%203c1c312cb49f802e8feae0e3dc2a788d.csv),,To Do,,,"August 27, 2026 3:04 PM"
+Kategori usia yang dibuat otomatis muncul sebagai pilihan saat membuat Grup/Stage baru.,,,,,,Manajemen Kategori Usia (Age Group) (Manajemen%20Kategori%20Usia%20(Age%20Group)%203c1c312cb49f802e8feae0e3dc2a788d.csv),,To Do,,,"August 27, 2026 3:04 PM"
+"Admin dapat membuat Grup baru di bawah kategori usia tertentu (contoh: U11 Group A) dan menentukan tipe: Group Stage atau Playoff/Cup Stage.
+",,,,,,Manajemen Grup & Babak (Group Stage / Playoff Stage) (Manajemen%20Grup%20&%20Babak%20(Group%20Stage%20Playoff%20Stage)%203c1c312cb49f80efbdb2efbea2499f3b.csv),,To Do,,,"August 27, 2026 3:06 PM"
+"Admin dapat menambahkan/menghapus tim ke dalam suatu grup.
+",,,,,,Manajemen Grup & Babak (Group Stage / Playoff Stage) (Manajemen%20Grup%20&%20Babak%20(Group%20Stage%20Playoff%20Stage)%203c1c312cb49f80efbdb2efbea2499f3b.csv),,To Do,,,"August 27, 2026 3:07 PM"
+"Sistem otomatis menghitung dan menampilkan tabel klasemen (Team, Played, Goal Difference, Points) berdasarkan hasil pertandingan yang sudah diinput — sesuai tampilan ""UI1 Group A – Table"".
+",,,,,,Manajemen Grup & Babak (Group Stage / Playoff Stage) (Manajemen%20Grup%20&%20Babak%20(Group%20Stage%20Playoff%20Stage)%203c1c312cb49f80efbdb2efbea2499f3b.csv),,To Do,,,"August 27, 2026 3:07 PM"
+"Admin dapat mengurutkan/override urutan klasemen secara manual jika diperlukan (misal untuk kasus tie-breaker khusus).
+",,,,,,Manajemen Grup & Babak (Group Stage / Playoff Stage) (Manajemen%20Grup%20&%20Babak%20(Group%20Stage%20Playoff%20Stage)%203c1c312cb49f80efbdb2efbea2499f3b.csv),,To Do,,,"August 27, 2026 3:08 PM"
+"Admin dapat melihat daftar pertandingan (matches) di dalam grup tersebut — sesuai tab ""Matches"" pada mobile.
+",,,,,,Manajemen Grup & Babak (Group Stage / Playoff Stage) (Manajemen%20Grup%20&%20Babak%20(Group%20Stage%20Playoff%20Stage)%203c1c312cb49f80efbdb2efbea2499f3b.csv),,To Do,,,"August 27, 2026 3:08 PM"
+"Admin dapat menambah tim baru dengan field: Nama Tim, Logo, Jenis Olahraga (mendukung multi-sport: Football, Basketball, Baseball, Volleyball, dll.), Kategori Usia, Grup.
+",,,,,,Manajemen Tim (Teams) (Manajemen%20Tim%20(Teams)%203c1c312cb49f80cd8b96c0d315c98de9.csv),,To Do,,,"August 27, 2026 3:13 PM"
+"Admin dapat mengatur warna/jersey Home & Away tim (field ini juga dapat di-submit oleh coach melalui mobile, dan berstatus ""pending review"" sampai disetujui admin) — selaras dengan fitur ""Set Jersey Colours"" di Coach Dashboard.
+",,,,,,Manajemen Tim (Teams) (Manajemen%20Tim%20(Teams)%203c1c312cb49f80cd8b96c0d315c98de9.csv),,To Do,,,"August 27, 2026 3:13 PM"
+"Admin dapat melihat & mengelola daftar pemain per tim (relasi ke modul Pemain).
+",,,,,,Manajemen Tim (Teams) (Manajemen%20Tim%20(Teams)%203c1c312cb49f80cd8b96c0d315c98de9.csv),,To Do,,,"August 27, 2026 3:18 PM"
+"Admin dapat melihat statistik tim otomatis (Total Matches, Matches Won, Goals Scored) yang ter-generate dari data pertandingan — sesuai tab ""Stats"" pada mobile.
+",,,,,,Manajemen Tim (Teams) (Manajemen%20Tim%20(Teams)%203c1c312cb49f80cd8b96c0d315c98de9.csv),,To Do,,,"August 27, 2026 3:18 PM"
+"Fitur pencarian tim by nama, filter by kategori usia/grup/sport.
+",,,,,,Manajemen Tim (Teams) (Manajemen%20Tim%20(Teams)%203c1c312cb49f80cd8b96c0d315c98de9.csv),,To Do,,,"August 27, 2026 3:18 PM"
+"Admin dapat menonaktifkan/menghapus tim yang mengundurkan diri, dengan validasi jika tim tersebut sudah punya jadwal pertandingan.
+",,,,,,Manajemen Tim (Teams) (Manajemen%20Tim%20(Teams)%203c1c312cb49f80cd8b96c0d315c98de9.csv),,To Do,,,"August 27, 2026 3:19 PM"
+"Admin dapat melihat daftar tim beserta status kelengkapan setup: Confirm Coach (✓/pending), Jersey Colours (✓/pending), Player Registration (✓/warning jika kuota belum terpenuhi).
+",,,,,,Manajemen Coach (Pelatih) & Persetujuan Data Tim (Manajemen%20Coach%20(Pelatih)%20&%20Persetujuan%20Data%20Tim%203c1c312cb49f80488d18e6c5a853fac1.csv),,To Do,,,"August 27, 2026 3:32 PM"
+"Admin dapat meng-assign satu atau lebih akun Coach ke tim tertentu agar coach tersebut dapat mengelola tim itu dari mobile.
+",,,,,,Manajemen Coach (Pelatih) & Persetujuan Data Tim (Manajemen%20Coach%20(Pelatih)%20&%20Persetujuan%20Data%20Tim%203c1c312cb49f80488d18e6c5a853fac1.csv),,To Do,,,"August 27, 2026 3:33 PM"
+"Admin dapat melihat & mengedit nama Coach 1/Coach 2 yang diajukan, serta menyetujui atau menolak (dengan catatan alasan) pengajuan tersebut.
+",,,,,,Manajemen Coach (Pelatih) & Persetujuan Data Tim (Manajemen%20Coach%20(Pelatih)%20&%20Persetujuan%20Data%20Tim%203c1c312cb49f80488d18e6c5a853fac1.csv),,To Do,,,"August 27, 2026 3:34 PM"
+"Admin dapat mengatur ""Max Squad Size"" per tim, dan sistem menghitung otomatis ""Slots Remaining"" berdasarkan jumlah pemain terdaftar — selaras dengan bagian ""Overview"" pada Coach Dashboard mobile.
+",,,,,,Manajemen Coach (Pelatih) & Persetujuan Data Tim (Manajemen%20Coach%20(Pelatih)%20&%20Persetujuan%20Data%20Tim%203c1c312cb49f80488d18e6c5a853fac1.csv),,To Do,,,"August 27, 2026 3:34 PM"
+"Sistem mengirim notifikasi ke Coach jika pengajuan ditolak/perlu revisi.
+",,,,,,Manajemen Coach (Pelatih) & Persetujuan Data Tim (Manajemen%20Coach%20(Pelatih)%20&%20Persetujuan%20Data%20Tim%203c1c312cb49f80488d18e6c5a853fac1.csv),,To Do,,,"August 27, 2026 3:34 PM"
+"Admin dapat menambah, mengedit, dan menghapus data pemain dengan field: Nama, Foto, Posisi, Nomor Punggung, Tim.
+",,,,,,Manajemen Pemain (Players) (Manajemen%20Pemain%20(Players)%203c1c312cb49f80838e63fa61e2dd0cd5.csv),,To Do,,,"August 27, 2026 3:43 PM"
+"Sistem memvalidasi agar nomor punggung tidak duplikat dalam satu tim.
+",,,,,,Manajemen Pemain (Players) (Manajemen%20Pemain%20(Players)%203c1c312cb49f80838e63fa61e2dd0cd5.csv),,To Do,,,"August 27, 2026 3:43 PM"
+"Admin dapat melihat dan menyetujui/menolak pendaftaran pemain baru yang diajukan Coach dari mobile.
+",,,,,,Manajemen Pemain (Players) (Manajemen%20Pemain%20(Players)%203c1c312cb49f80838e63fa61e2dd0cd5.csv),,To Do,,,"August 27, 2026 3:43 PM"
+"Admin dapat memindahkan pemain antar tim (transfer) dengan riwayat perubahan tercatat.
+",,,,,,Manajemen Pemain (Players) (Manajemen%20Pemain%20(Players)%203c1c312cb49f80838e63fa61e2dd0cd5.csv),,To Do,,,"August 27, 2026 3:44 PM"
+"List pemain dapat difilter berdasarkan tim, kategori usia, dan dicari berdasarkan nama.
+",,,,,,Manajemen Pemain (Players) (Manajemen%20Pemain%20(Players)%203c1c312cb49f80838e63fa61e2dd0cd5.csv),,To Do,,,"August 27, 2026 3:44 PM"
+Manajemen Jadwal & Pertandingan (Match Schedule),,,,,,,,To Do,"
+Admin dapat membuat jadwal secara otomatis dengan memasukkan nama tim, lama pertandingan, lama waktu istirahat (buffer) & berapa venue/pitch yg digunakan. 
+ (Admin%20dapat%20membuat%20jadwal%20secara%20otomatis%20dengan%20%203c9c312cb49f8086b4b3f9ef85c3bb93.csv), Sistem mendeteksi dan memperingatkan jika terjadi bentrok jadwal (venue atau tim yang sama pada waktu bersamaan).
+ (Sistem%20mendeteksi%20dan%20memperingatkan%20jika%20terjadi%20%203c9c312cb49f80679877f6ec9e2f61f2.csv), Admin dapat mengubah status pertandingan: Scheduled, Live, Finished, Postponed, Cancelled.
+ (Admin%20dapat%20mengubah%20status%20pertandingan%20Scheduled%203c9c312cb49f80c2b4f6eb40a9e03c8e.csv), Pertandingan berstatus ""Live"" akan otomatis tampil dengan badge ""LIVE"" pada aplikasi mobile.
+ (Pertandingan%20berstatus%20Live%20akan%20otomatis%20tampil%20d%203c9c312cb49f80e49730c7358b633ca5.csv), Admin dapat melakukan reschedule (ubah tanggal/jam/venue) dan sistem mengirim notifikasi perubahan ke pengguna yang menjadikan tim tersebut sebagai ""Favorite Team & Coach"".
+ (Admin%20dapat%20melakukan%20reschedule%20(ubah%20tanggal%20jam%203c9c312cb49f80ab9cadcec63436218d.csv), List jadwal dapat difilter per tanggal, kategori usia, grup, dan status.
+ (List%20jadwal%20dapat%20difilter%20per%20tanggal,%20kategori%20u%203c9c312cb49f802db4b5de49b5c99653.csv)",Web,"August 27, 2026 4:42 PM"
+"
+Admin dapat membuat jadwal secara otomatis dengan memasukkan nama tim, lama pertandingan, lama waktu istirahat (buffer) & berapa venue/pitch yg digunakan. 
+",,,,,,Manajemen Jadwal & Pertandingan (Match Schedule) (Manajemen%20Jadwal%20&%20Pertandingan%20(Match%20Schedule)%203c9c312cb49f8040abe4fbad6427fd9c.csv),,To Do,,,"August 28, 2026 11:09 AM"
+"Sistem mendeteksi dan memperingatkan jika terjadi bentrok jadwal (venue atau tim yang sama pada waktu bersamaan).
+",,,,,,Manajemen Jadwal & Pertandingan (Match Schedule) (Manajemen%20Jadwal%20&%20Pertandingan%20(Match%20Schedule)%203c9c312cb49f8040abe4fbad6427fd9c.csv),,To Do,,,"August 27, 2026 3:49 PM"
+"Admin dapat mengubah status pertandingan: Scheduled, Live, Finished, Postponed, Cancelled.
+",,,,,,Manajemen Jadwal & Pertandingan (Match Schedule) (Manajemen%20Jadwal%20&%20Pertandingan%20(Match%20Schedule)%203c9c312cb49f8040abe4fbad6427fd9c.csv),,To Do,,,"August 27, 2026 3:50 PM"
+"Pertandingan berstatus ""Live"" akan otomatis tampil dengan badge ""LIVE"" pada aplikasi mobile.
+",,,,,,Manajemen Jadwal & Pertandingan (Match Schedule) (Manajemen%20Jadwal%20&%20Pertandingan%20(Match%20Schedule)%203c9c312cb49f8040abe4fbad6427fd9c.csv),,To Do,,,"August 27, 2026 3:50 PM"
+"Admin dapat melakukan reschedule (ubah tanggal/jam/venue) dan sistem mengirim notifikasi perubahan ke pengguna yang menjadikan tim tersebut sebagai ""Favorite Team & Coach"".
+",,,,,,Manajemen Jadwal & Pertandingan (Match Schedule) (Manajemen%20Jadwal%20&%20Pertandingan%20(Match%20Schedule)%203c9c312cb49f8040abe4fbad6427fd9c.csv),,To Do,,,"August 27, 2026 3:51 PM"
+"List jadwal dapat difilter per tanggal, kategori usia, grup, dan status.
+",,,,,,Manajemen Jadwal & Pertandingan (Match Schedule) (Manajemen%20Jadwal%20&%20Pertandingan%20(Match%20Schedule)%203c9c312cb49f8040abe4fbad6427fd9c.csv),,To Do,,,"August 27, 2026 3:51 PM"
+"Input Hasil Pertandingan, Skor & Gol (Live Score)",,,,,,,,To Do,"Admin dapat menginput skor Home & Away untuk setiap pertandingan.
+ (Admin%20dapat%20menginput%20skor%20Home%20&%20Away%20untuk%20setia%203c9c312cb49f8061bbe0c3b121fbfcd7.csv), Admin dapat menambahkan daftar pencetak gol (nama pemain, tim, menit gol), yang muncul pada section ""Goals"" di detail pertandingan mobile.
+ (Admin%20dapat%20menambahkan%20daftar%20pencetak%20gol%20(nama%20%203c9c312cb49f80928c3ef569e02454d7.csv), Setelah skor pertandingan disimpan dengan status ""Finished"", sistem otomatis meng-update tabel klasemen grup terkait (Played, Goal Difference, Points) dan statistik tim (Matches Won, Goals Scored).
+ (Setelah%20skor%20pertandingan%20disimpan%20dengan%20status%20F%203c9c312cb49f806aa982fd7958508730.csv), Admin dapat mengedit/mengoreksi skor dan gol yang sudah diinput sebelumnya, dengan log perubahan (audit trail).
+ (Admin%20dapat%20mengedit%20mengoreksi%20skor%20dan%20gol%20yang%20%203c9c312cb49f80c79ba1fad701cabe42.csv), Sistem mendukung update skor secara live (menit berjalan) untuk pertandingan berstatus ""Live"".
+ (Sistem%20mendukung%20update%20skor%20secara%20live%20(menit%20be%203c9c312cb49f80e097c8fb3149d56102.csv)",Web,"August 27, 2026 4:42 PM"
+"Admin dapat menginput skor Home & Away untuk setiap pertandingan.
+",,,,,,"Input Hasil Pertandingan, Skor & Gol (Live Score) (Input%20Hasil%20Pertandingan,%20Skor%20&%20Gol%20(Live%20Score)%203c9c312cb49f80cf8353cbf5fcf6697a.csv)",,To Do,,,"August 27, 2026 4:13 PM"
+"Admin dapat menambahkan daftar pencetak gol (nama pemain, tim, menit gol), yang muncul pada section ""Goals"" di detail pertandingan mobile.
+",,,,,,"Input Hasil Pertandingan, Skor & Gol (Live Score) (Input%20Hasil%20Pertandingan,%20Skor%20&%20Gol%20(Live%20Score)%203c9c312cb49f80cf8353cbf5fcf6697a.csv)",,To Do,,,"August 27, 2026 4:18 PM"
+"Setelah skor pertandingan disimpan dengan status ""Finished"", sistem otomatis meng-update tabel klasemen grup terkait (Played, Goal Difference, Points) dan statistik tim (Matches Won, Goals Scored).
+",,,,,,"Input Hasil Pertandingan, Skor & Gol (Live Score) (Input%20Hasil%20Pertandingan,%20Skor%20&%20Gol%20(Live%20Score)%203c9c312cb49f80cf8353cbf5fcf6697a.csv)",,To Do,,,"August 27, 2026 4:18 PM"
+"Admin dapat mengedit/mengoreksi skor dan gol yang sudah diinput sebelumnya, dengan log perubahan (audit trail).
+",,,,,,"Input Hasil Pertandingan, Skor & Gol (Live Score) (Input%20Hasil%20Pertandingan,%20Skor%20&%20Gol%20(Live%20Score)%203c9c312cb49f80cf8353cbf5fcf6697a.csv)",,To Do,,,"August 27, 2026 4:19 PM"
+"Sistem mendukung update skor secara live (menit berjalan) untuk pertandingan berstatus ""Live"".
+",,,,,,"Input Hasil Pertandingan, Skor & Gol (Live Score) (Input%20Hasil%20Pertandingan,%20Skor%20&%20Gol%20(Live%20Score)%203c9c312cb49f80cf8353cbf5fcf6697a.csv)",,To Do,,,"August 27, 2026 4:19 PM"
+Manajemen Highlight (Video),,,,,,,,To Do,"Admin dapat mengunggah video (atau menempelkan link video) beserta thumbnail, judul, dan mengaitkannya ke pertandingan/pemain tertentu.
+ (Admin%20dapat%20mengunggah%20video%20(atau%20menempelkan%20lin%203c9c312cb49f8020b03cf0b2be281dbd.csv), Admin dapat mengatur urutan tampil highlight dan mempublish/unpublish video.
+ (Admin%20dapat%20mengatur%20urutan%20tampil%20highlight%20dan%20m%203c9c312cb49f809e9488fbfbb8862b8c.csv), Admin dapat menghapus atau mengganti video yang sudah diunggah.
+ (Admin%20dapat%20menghapus%20atau%20mengganti%20video%20yang%20su%203c9c312cb49f80689d7fcb56adb3f75c.csv), Sistem menampilkan preview sebelum admin mempublikasikan video.
+ (Sistem%20menampilkan%20preview%20sebelum%20admin%20mempublik%203c9c312cb49f8026800eca185b471cae.csv), Format & ukuran file video divalidasi sesuai ketentuan (misal maksimal ukuran & format yang didukung).
+ (Format%20&%20ukuran%20file%20video%20divalidasi%20sesuai%20keten%203c9c312cb49f8046a558f0b84242a5bb.csv)",Web,"August 27, 2026 4:42 PM"
+"Admin dapat mengunggah video (atau menempelkan link video) beserta thumbnail, judul, dan mengaitkannya ke pertandingan/pemain tertentu.
+",,,,,,Manajemen Highlight (Video) (Manajemen%20Highlight%20(Video)%203c9c312cb49f8056bcdbd4f6f3ed9ad7.csv),,To Do,,,"August 27, 2026 4:23 PM"
+"Admin dapat mengatur urutan tampil highlight dan mempublish/unpublish video.
+",,,,,,Manajemen Highlight (Video) (Manajemen%20Highlight%20(Video)%203c9c312cb49f8056bcdbd4f6f3ed9ad7.csv),,To Do,,,"August 27, 2026 4:24 PM"
+"Admin dapat menghapus atau mengganti video yang sudah diunggah.
+",,,,,,Manajemen Highlight (Video) (Manajemen%20Highlight%20(Video)%203c9c312cb49f8056bcdbd4f6f3ed9ad7.csv),,To Do,,,"August 27, 2026 4:24 PM"
+"Sistem menampilkan preview sebelum admin mempublikasikan video.
+",,,,,,Manajemen Highlight (Video) (Manajemen%20Highlight%20(Video)%203c9c312cb49f8056bcdbd4f6f3ed9ad7.csv),,To Do,,,"August 27, 2026 4:24 PM"
+"Format & ukuran file video divalidasi sesuai ketentuan (misal maksimal ukuran & format yang didukung).
+",,,,,,Manajemen Highlight (Video) (Manajemen%20Highlight%20(Video)%203c9c312cb49f8056bcdbd4f6f3ed9ad7.csv),,To Do,,,"August 27, 2026 4:24 PM"
+Manajemen Berita (Football News),,,,,,,,To Do,"Admin dapat membuat artikel dengan field: Judul, Gambar Cover, Isi Konten (rich text), Kategori, Tanggal Publish.
+ (Admin%20dapat%20membuat%20artikel%20dengan%20field%20Judul,%20Ga%203c9c312cb49f8086a813d449bd0ae898.csv), Admin dapat menyimpan artikel sebagai Draft atau langsung Publish.
+ (Admin%20dapat%20menyimpan%20artikel%20sebagai%20Draft%20atau%20l%203c9c312cb49f801798dcf2d99ac161d4.csv), Admin dapat mengedit dan menghapus artikel yang sudah dipublikasikan.
+ (Admin%20dapat%20mengedit%20dan%20menghapus%20artikel%20yang%20su%203c9c312cb49f80f89cfee6ac02fa0cbc.csv), List artikel menampilkan status (Draft/Published) dan dapat difilter/dicari.
+ (List%20artikel%20menampilkan%20status%20(Draft%20Published)%20%203c9c312cb49f808b927bf31e86be4ee6.csv), Artikel dengan status ""Draft"" tidak tampil di aplikasi mobile.
+ (Artikel%20dengan%20status%20Draft%20tidak%20tampil%20di%20aplika%203c9c312cb49f80b49fadc625b9da0fa7.csv)",Web,"August 27, 2026 4:42 PM"
+"Admin dapat membuat artikel dengan field: Judul, Gambar Cover, Isi Konten (rich text), Kategori, Tanggal Publish.
+",,,,,,Manajemen Berita (Football News) (Manajemen%20Berita%20(Football%20News)%203c9c312cb49f80bf8c08e5e5db04409c.csv),,To Do,,,"August 27, 2026 4:27 PM"
+"Admin dapat menyimpan artikel sebagai Draft atau langsung Publish.
+",,,,,,Manajemen Berita (Football News) (Manajemen%20Berita%20(Football%20News)%203c9c312cb49f80bf8c08e5e5db04409c.csv),,To Do,,,"August 27, 2026 4:27 PM"
+"Admin dapat mengedit dan menghapus artikel yang sudah dipublikasikan.
+",,,,,,Manajemen Berita (Football News) (Manajemen%20Berita%20(Football%20News)%203c9c312cb49f80bf8c08e5e5db04409c.csv),,To Do,,,"August 27, 2026 4:28 PM"
+"List artikel menampilkan status (Draft/Published) dan dapat difilter/dicari.
+",,,,,,Manajemen Berita (Football News) (Manajemen%20Berita%20(Football%20News)%203c9c312cb49f80bf8c08e5e5db04409c.csv),,To Do,,,"August 27, 2026 4:28 PM"
+"Artikel dengan status ""Draft"" tidak tampil di aplikasi mobile.
+",,,,,,Manajemen Berita (Football News) (Manajemen%20Berita%20(Football%20News)%203c9c312cb49f80bf8c08e5e5db04409c.csv),,To Do,,,"August 27, 2026 4:28 PM"
+Manajemen Venue/Lapangan (Pitch),,,,,,,,To Do,"Admin dapat menambah, mengedit, dan menghapus data venue: Nama Venue/Pitch, Alamat, Kapasitas (opsional), Peta lokasi (opsional).
+ (Admin%20dapat%20menambah,%20mengedit,%20dan%20menghapus%20data%203c9c312cb49f8025977de9a89da133d7.csv), Venue yang sudah terpakai di jadwal pertandingan tidak dapat dihapus (hanya bisa dinonaktifkan).
+ (Venue%20yang%20sudah%20terpakai%20di%20jadwal%20pertandingan%20t%203c9c312cb49f8007801ad97d21d9aeda.csv), List venue dapat dicari dan difilter.
+ (List%20venue%20dapat%20dicari%20dan%20difilter%203c9c312cb49f808b8e8cdba1997b2930.csv)",Web,"August 27, 2026 4:42 PM"
+"Admin dapat menambah, mengedit, dan menghapus data venue: Nama Venue/Pitch, Alamat, Kapasitas (opsional), Peta lokasi (opsional).
+",,,,,,Manajemen Venue/Lapangan (Pitch) (Manajemen%20Venue%20Lapangan%20(Pitch)%203c9c312cb49f800db8eee5699a6cb875.csv),,To Do,,,"August 27, 2026 4:29 PM"
+"Venue yang sudah terpakai di jadwal pertandingan tidak dapat dihapus (hanya bisa dinonaktifkan).
+",,,,,,Manajemen Venue/Lapangan (Pitch) (Manajemen%20Venue%20Lapangan%20(Pitch)%203c9c312cb49f800db8eee5699a6cb875.csv),,To Do,,,"August 27, 2026 4:29 PM"
+"List venue dapat dicari dan difilter.
+",,,,,,Manajemen Venue/Lapangan (Pitch) (Manajemen%20Venue%20Lapangan%20(Pitch)%203c9c312cb49f800db8eee5699a6cb875.csv),,To Do,,,"August 27, 2026 4:29 PM"
+Manajemen Peraturan Turnamen (Tournament Rules),,,,,,,,To Do,"Admin dapat membuat/mengedit konten peraturan turnamen dalam format rich text atau upload dokumen (PDF).
+ (Admin%20dapat%20membuat%20mengedit%20konten%20peraturan%20turn%203c9c312cb49f80b98a7cdc75f65825e7.csv), Perubahan pada peraturan tersimpan dengan versi/tanggal update terakhir.
+ (Perubahan%20pada%20peraturan%20tersimpan%20dengan%20versi%20ta%203c9c312cb49f80f0a323cf57db71651e.csv), Konten yang dipublish langsung dapat diakses oleh seluruh coach/pengguna terkait di mobile.
+ (Konten%20yang%20dipublish%20langsung%20dapat%20diakses%20oleh%20%203c9c312cb49f8016acf4ddd32132fd14.csv)",Web,"August 27, 2026 4:42 PM"
+"Admin dapat membuat/mengedit konten peraturan turnamen dalam format rich text atau upload dokumen (PDF).
+",,,,,,Manajemen Peraturan Turnamen (Tournament Rules) (Manajemen%20Peraturan%20Turnamen%20(Tournament%20Rules)%203c9c312cb49f80f89febee75984844b9.csv),,To Do,,,"August 27, 2026 4:31 PM"
+"Perubahan pada peraturan tersimpan dengan versi/tanggal update terakhir.
+",,,,,,Manajemen Peraturan Turnamen (Tournament Rules) (Manajemen%20Peraturan%20Turnamen%20(Tournament%20Rules)%203c9c312cb49f80f89febee75984844b9.csv),,To Do,,,"August 27, 2026 4:31 PM"
+"Konten yang dipublish langsung dapat diakses oleh seluruh coach/pengguna terkait di mobile.
+",,,,,,Manajemen Peraturan Turnamen (Tournament Rules) (Manajemen%20Peraturan%20Turnamen%20(Tournament%20Rules)%203c9c312cb49f80f89febee75984844b9.csv),,To Do,,,"August 27, 2026 4:31 PM"
+Manajemen Sertifikat (Certificate),,,,,,,,To Do,"Admin dapat mengunggah/mengatur template sertifikat (logo turnamen, layout).
+ (Admin%20dapat%20mengunggah%20mengatur%20template%20sertifika%203c9c312cb49f806abb28c7eca2ffdb37.csv), Admin dapat mengaktifkan/menonaktifkan ketersediaan sertifikat per pertandingan atau per tim.
+ (Admin%20dapat%20mengaktifkan%20menonaktifkan%20ketersediaa%203c9c312cb49f80a884fac30a61127aaf.csv), Sistem men-generate sertifikat otomatis berisi data terkait (nama tim, pemain, juara (jika juara) or partisipan (jika tidak juara), tanggal pertandingan) saat diunduh dari mobile. 
+ (Sistem%20men-generate%20sertifikat%20otomatis%20berisi%20dat%203c9c312cb49f80168b9bec505d65b955.csv)",Web,"August 27, 2026 4:42 PM"
+"Admin dapat mengunggah/mengatur template sertifikat (logo turnamen, layout).
+",,,,,,Manajemen Sertifikat (Certificate) (Manajemen%20Sertifikat%20(Certificate)%203c9c312cb49f80a28dfbf4dbbb453336.csv),,To Do,,,"August 27, 2026 4:33 PM"
+"Admin dapat mengaktifkan/menonaktifkan ketersediaan sertifikat per pertandingan atau per tim.
+",,,,,,Manajemen Sertifikat (Certificate) (Manajemen%20Sertifikat%20(Certificate)%203c9c312cb49f80a28dfbf4dbbb453336.csv),,To Do,,,"August 27, 2026 4:33 PM"
+"Sistem men-generate sertifikat otomatis berisi data terkait (nama tim, pemain, juara (jika juara) or partisipan (jika tidak juara), tanggal pertandingan) saat diunduh dari mobile. 
+",,,,,,Manajemen Sertifikat (Certificate) (Manajemen%20Sertifikat%20(Certificate)%203c9c312cb49f80a28dfbf4dbbb453336.csv),,To Do,,,"August 28, 2026 11:15 AM"
+Dashboard & Laporan,,,,,,,,To Do,"Dashboard menampilkan ringkasan angka: Total Tim, Total Pemain, Pertandingan Hari Ini, Pertandingan Live, Grup Aktif.
+ (Dashboard%20menampilkan%20ringkasan%20angka%20Total%20Tim,%20T%203c9c312cb49f80d386fbc3ea208db57e.csv), Dashboard menampilkan daftar tim dengan status setup belum lengkap (perlu tindakan admin) — mengacu pada checklist Coach Dashboard.
+ (Dashboard%20menampilkan%20daftar%20tim%20dengan%20status%20set%203c9c312cb49f801da6abf72c9687922c.csv), Admin dapat mengekspor data (misal klasemen, jadwal, daftar pemain) ke format Excel/PDF.
+Admin dapat mengekspor data (misal klasemen, jadwal, daftar pemain) ke format Excel/PDF.
+ (Admin%20dapat%20mengekspor%20data%20(misal%20klasemen,%20jadwa%203c9c312cb49f80d18aadebd11c4826e5.csv), Data pada dashboard ter-update secara real-time atau near real-time.
+ (Data%20pada%20dashboard%20ter-update%20secara%20real-time%20at%203c9c312cb49f80cb95ffc8cd915f3f43.csv)",Web,"August 27, 2026 4:42 PM"
+Manajemen Notifikasi,,,,,,,,To Do,"Admin dapat membuat notifikasi manual dengan judul & isi pesan, ditujukan ke seluruh pengguna atau pengguna yang menjadikan tim tertentu sebagai favorit.
+ (Admin%20dapat%20membuat%20notifikasi%20manual%20dengan%20judul%203c9c312cb49f8062b677d6adb3c31677.csv), Sistem otomatis mengirim notifikasi saat: jadwal berubah, pertandingan dimulai (live), dan hasil pertandingan selesai diinput.
+ (Sistem%20otomatis%20mengirim%20notifikasi%20saat%20jadwal%20be%203c9c312cb49f8095a0ade4641047bd18.csv), Admin dapat melihat riwayat notifikasi yang telah terkirim.
+ (Admin%20dapat%20melihat%20riwayat%20notifikasi%20yang%20telah%20%203c9c312cb49f8090a994d61327c97029.csv)",Web,"August 27, 2026 4:42 PM"
+"Dashboard menampilkan ringkasan angka: Total Tim, Total Pemain, Pertandingan Hari Ini, Pertandingan Live, Grup Aktif.
+",,,,,,Dashboard & Laporan (Dashboard%20&%20Laporan%203c9c312cb49f80d58e8dddfc3a97f8e1.csv),,To Do,,,"August 27, 2026 4:36 PM"
+"Dashboard menampilkan daftar tim dengan status setup belum lengkap (perlu tindakan admin) — mengacu pada checklist Coach Dashboard.
+",,,,,,Dashboard & Laporan (Dashboard%20&%20Laporan%203c9c312cb49f80d58e8dddfc3a97f8e1.csv),,To Do,,,"August 27, 2026 4:37 PM"
+"Admin dapat mengekspor data (misal klasemen, jadwal, daftar pemain) ke format Excel/PDF.
+Admin dapat mengekspor data (misal klasemen, jadwal, daftar pemain) ke format Excel/PDF.
+",,,,,,Dashboard & Laporan (Dashboard%20&%20Laporan%203c9c312cb49f80d58e8dddfc3a97f8e1.csv),,To Do,,,"August 27, 2026 4:37 PM"
+"Data pada dashboard ter-update secara real-time atau near real-time.
+",,,,,,Dashboard & Laporan (Dashboard%20&%20Laporan%203c9c312cb49f80d58e8dddfc3a97f8e1.csv),,To Do,,,"August 27, 2026 4:37 PM"
+"Admin dapat membuat notifikasi manual dengan judul & isi pesan, ditujukan ke seluruh pengguna atau pengguna yang menjadikan tim tertentu sebagai favorit.
+",,,,,,Manajemen Notifikasi (Manajemen%20Notifikasi%203c9c312cb49f809daef8fad001c8d0e9.csv),,To Do,,,"August 27, 2026 4:38 PM"
+"Sistem otomatis mengirim notifikasi saat: jadwal berubah, pertandingan dimulai (live), dan hasil pertandingan selesai diinput.
+",,,,,,Manajemen Notifikasi (Manajemen%20Notifikasi%203c9c312cb49f809daef8fad001c8d0e9.csv),,To Do,,,"August 27, 2026 4:39 PM"
+"Admin dapat melihat riwayat notifikasi yang telah terkirim.
+",,,,,,Manajemen Notifikasi (Manajemen%20Notifikasi%203c9c312cb49f809daef8fad001c8d0e9.csv),,To Do,,,"August 27, 2026 4:39 PM"
+Role,,,,,,,,To Do,,,"August 27, 2026 4:45 PM"
+Login,,,,,,,,To Do,"Given user membuka aplikasi, When berada di halaman awal, Then ditampilkan form dengan field Email, Password, tombol ""Login"", dan link ""Terms of Service"" & ""Privacy Policy"".
+ (Given%20user%20membuka%20aplikasi,%20When%20berada%20di%20halama%203c9c312cb49f807f9ec8c9d37bd22adc.csv), Given user mengisi email & password yang valid, When menekan tombol ""Login"", Then user diarahkan ke halaman Home.
+ (Given%20user%20mengisi%20email%20&%20password%20yang%20valid,%20Wh%203c9c312cb49f8098864ff04742c5b420.csv), Given email/password salah, When submit, Then muncul pesan error dan user tetap berada di halaman login.
+ (Given%20email%20password%20salah,%20When%20submit,%20Then%20munc%203c9c312cb49f80d69d40d55f473ef636.csv), Given field email atau password kosong, When menekan ""Login"", Then tombol/validasi menampilkan pesan bahwa field wajib diisi.
+ (Given%20field%20email%20atau%20password%20kosong,%20When%20menek%203c9c312cb49f80de8e7df0ed9693800b.csv), Password yang diketik ditampilkan tersamar (masked) dengan opsi show/hide.
+ (Password%20yang%20diketik%20ditampilkan%20tersamar%20(masked%203c9c312cb49f809da155f3dea5ed2aec.csv), Checkbox/persetujuan ""I agree to Terms of Service and Privacy Policy"" wajib dicentang sebelum bisa login (jika sesuai desain).
+ (Checkbox%20persetujuan%20I%20agree%20to%20Terms%20of%20Service%20a%203c9c312cb49f802996d9d584e2296400.csv)",Mobile,"August 27, 2026 4:48 PM"
+"Given user membuka aplikasi, When berada di halaman awal, Then ditampilkan form dengan field Email, Password, tombol ""Login"", dan link ""Terms of Service"" & ""Privacy Policy"".
+",,,,,,Login (Login%203c9c312cb49f80f0b387db00c9c8969b.csv),,To Do,,,"August 27, 2026 4:48 PM"
+"Given user mengisi email & password yang valid, When menekan tombol ""Login"", Then user diarahkan ke halaman Home.
+",,,,,,Login (Login%203c9c312cb49f80f0b387db00c9c8969b.csv),,To Do,,,"August 27, 2026 4:49 PM"
+"Given email/password salah, When submit, Then muncul pesan error dan user tetap berada di halaman login.
+",,,,,,Login (Login%203c9c312cb49f80f0b387db00c9c8969b.csv),,To Do,,,"August 27, 2026 4:50 PM"
+"Given field email atau password kosong, When menekan ""Login"", Then tombol/validasi menampilkan pesan bahwa field wajib diisi.
+",,,,,,Login (Login%203c9c312cb49f80f0b387db00c9c8969b.csv),,To Do,,,"August 27, 2026 4:50 PM"
+"Password yang diketik ditampilkan tersamar (masked) dengan opsi show/hide.
+",,,,,,Login (Login%203c9c312cb49f80f0b387db00c9c8969b.csv),,To Do,,,"August 27, 2026 4:50 PM"
+"Checkbox/persetujuan ""I agree to Terms of Service and Privacy Policy"" wajib dicentang sebelum bisa login (jika sesuai desain).
+",,,,,,Login (Login%203c9c312cb49f80f0b387db00c9c8969b.csv),,To Do,,,"August 27, 2026 4:51 PM"
+Home / Dashboard Utama,,,,,,,,To Do,"Halaman Home menampilkan banner pertandingan utama/live dengan label ""LIVE"", nama pertandingan (contoh: ""Report: Cadiz 4 – United 2""), dan tombol ""Play"" untuk highlight/live stream.
+ (Halaman%20Home%20menampilkan%20banner%20pertandingan%20utama%203c9c312cb49f802a950bc96494b42f03.csv), Terdapat tombol ""Certificate"" pada banner pertandingan untuk mengunduh sertifikat.
+ (Terdapat%20tombol%20Certificate%20pada%20banner%20pertanding%203c9c312cb49f80a9a099d6c9697d4ce9.csv), Section ""Matches Today"" menampilkan daftar pertandingan hari ini dalam bentuk card (logo tim, skor, status), dengan link ""View All"".
+ (Section%20Matches%20Today%20menampilkan%20daftar%20pertandin%203c9c312cb49f8043b6b9c795bafec0f1.csv), Section ""Match Schedule"" menampilkan daftar pertandingan mendatang (tim home vs away, jam tanding).
+ (Section%20Match%20Schedule%20menampilkan%20daftar%20pertandi%203c9c312cb49f80ab860ccfde9311acc6.csv), Section ""Football News"" menampilkan daftar berita terbaru, dengan link ""View All"".
+ (Section%20Football%20News%20menampilkan%20daftar%20berita%20te%203c9c312cb49f8095a29ee7b882a48962.csv), Terdapat ikon notifikasi (bell) di pojok kanan atas dan ikon menu (hamburger) di pojok kiri atas.
+ (Terdapat%20ikon%20notifikasi%20(bell)%20di%20pojok%20kanan%20ata%203c9c312cb49f808ea9c4cb7245e88aa9.csv), Bottom navigation menampilkan menu: Matches, Teams, Highlights (dan varian Home, Schedule, News pada tampilan lain) agar user dapat berpindah antar section utama.
+ (Bottom%20navigation%20menampilkan%20menu%20Matches,%20Teams,%203c9c312cb49f803aa4a6e1227d648ddb.csv), Data pada Home ter-refresh otomatis / dapat di-refresh manual (pull to refresh) untuk menampilkan skor live terbaru.
+ (Data%20pada%20Home%20ter-refresh%20otomatis%20dapat%20di-refre%203c9c312cb49f802dba81df4a37faa10d.csv)",Mobile,"August 27, 2026 4:52 PM"
+Pemilihan Kategori Usia (Select an Age Group),,,,,,,,To Do,"Given user menekan menu ""Matches"" dari Home, When halaman terbuka, Then ditampilkan daftar kategori usia yang tersedia dalam bentuk list (Under 11, Under 13, Under 19).
+ (Given%20user%20menekan%20menu%20Matches%20dari%20Home,%20When%20ha%203c9c312cb49f80138476ce7e53ca25c1.csv), Given user memilih salah satu kategori usia, When ditekan, Then user diarahkan ke halaman ""Group Stages"" & ""Playoff Stages"" untuk kategori tersebut.
+ (Given%20user%20memilih%20salah%20satu%20kategori%20usia,%20When%20%203c9c312cb49f8044a4a9dbad0437aab6.csv), Setiap item kategori usia menampilkan ikon panah (>) yang menandakan dapat diklik untuk drill-down.
+ (Setiap%20item%20kategori%20usia%20menampilkan%20ikon%20panah%20(%203c9c312cb49f8018a586c7e47b4b6410.csv), Terdapat tombol back (<) untuk kembali ke halaman sebelumnya.
+ (Terdapat%20tombol%20back%20(%20)%20untuk%20kembali%20ke%20halaman%20%203c9c312cb49f80839a1fd1bb7a0e9cbd.csv)",Mobile,"August 27, 2026 4:56 PM"
+Group Stages & Playoff Stages,,,,,,,,To Do,"Halaman menampilkan judul kategori usia yang dipilih (contoh: ""Under 11"") beserta breadcrumb/back navigation.
+ (Halaman%20menampilkan%20judul%20kategori%20usia%20yang%20dipil%203c9c312cb49f80668c70f9871ea9ea84.csv), Section ""Group Stages"" menampilkan daftar grup (contoh: ""U11 Group A"", ""U11 Group B"") yang dapat ditekan untuk melihat detail.
+ (Section%20Group%20Stages%20menampilkan%20daftar%20grup%20(cont%203c9c312cb49f805bb6fdda744faa64f9.csv), Section ""Playoff Stages"" menampilkan daftar babak playoff (contoh: ""U11 Cup"").
+ (Section%20Playoff%20Stages%20menampilkan%20daftar%20babak%20pl%203c9c312cb49f80a4afb1f0033b742b9b.csv), Given user menekan salah satu grup, When halaman terbuka, Then user diarahkan ke halaman detail grup dengan 2 tab: ""Table"" dan ""Matches"".
+ (Given%20user%20menekan%20salah%20satu%20grup,%20When%20halaman%20t%203c9c312cb49f80b786b1c624354d6d3b.csv)",Mobile,"August 27, 2026 5:04 PM"
+"Halaman Home menampilkan banner pertandingan utama/live dengan label ""LIVE"", nama pertandingan (contoh: ""Report: Cadiz 4 – United 2""), dan tombol ""Play"" untuk highlight/live stream.
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:52 PM"
+"Terdapat tombol ""Certificate"" pada banner pertandingan untuk mengunduh sertifikat.
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:53 PM"
+"Section ""Matches Today"" menampilkan daftar pertandingan hari ini dalam bentuk card (logo tim, skor, status), dengan link ""View All"".
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:53 PM"
+"Section ""Match Schedule"" menampilkan daftar pertandingan mendatang (tim home vs away, jam tanding).
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:53 PM"
+"Section ""Football News"" menampilkan daftar berita terbaru, dengan link ""View All"".
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:54 PM"
+"Terdapat ikon notifikasi (bell) di pojok kanan atas dan ikon menu (hamburger) di pojok kiri atas.
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:55 PM"
+"Bottom navigation menampilkan menu: Matches, Teams, Highlights (dan varian Home, Schedule, News pada tampilan lain) agar user dapat berpindah antar section utama.
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:55 PM"
+"Data pada Home ter-refresh otomatis / dapat di-refresh manual (pull to refresh) untuk menampilkan skor live terbaru.
+",,,,,,Home / Dashboard Utama (Home%20Dashboard%20Utama%203c9c312cb49f803b86afe415b9b042fe.csv),,To Do,,,"August 27, 2026 4:55 PM"
+"Given user menekan menu ""Matches"" dari Home, When halaman terbuka, Then ditampilkan daftar kategori usia yang tersedia dalam bentuk list (Under 11, Under 13, Under 19).
+",,,,,,Pemilihan Kategori Usia (Select an Age Group) (Pemilihan%20Kategori%20Usia%20(Select%20an%20Age%20Group)%203c9c312cb49f8015a068c6c9294c9842.csv),,To Do,,,"August 27, 2026 4:57 PM"
+"Given user memilih salah satu kategori usia, When ditekan, Then user diarahkan ke halaman ""Group Stages"" & ""Playoff Stages"" untuk kategori tersebut.
+",,,,,,Pemilihan Kategori Usia (Select an Age Group) (Pemilihan%20Kategori%20Usia%20(Select%20an%20Age%20Group)%203c9c312cb49f8015a068c6c9294c9842.csv),,To Do,,,"August 27, 2026 4:57 PM"
+"Setiap item kategori usia menampilkan ikon panah (>) yang menandakan dapat diklik untuk drill-down.
+",,,,,,Pemilihan Kategori Usia (Select an Age Group) (Pemilihan%20Kategori%20Usia%20(Select%20an%20Age%20Group)%203c9c312cb49f8015a068c6c9294c9842.csv),,To Do,,,"August 27, 2026 4:57 PM"
+"Terdapat tombol back (<) untuk kembali ke halaman sebelumnya.
+",,,,,,Pemilihan Kategori Usia (Select an Age Group) (Pemilihan%20Kategori%20Usia%20(Select%20an%20Age%20Group)%203c9c312cb49f8015a068c6c9294c9842.csv),,To Do,,,"August 27, 2026 4:58 PM"
+"Halaman menampilkan judul kategori usia yang dipilih (contoh: ""Under 11"") beserta breadcrumb/back navigation.
+",,,,,,Group Stages & Playoff Stages (Group%20Stages%20&%20Playoff%20Stages%203c9c312cb49f8028b1bad7b243f233b7.csv),,To Do,,,"August 27, 2026 5:04 PM"
+"Section ""Group Stages"" menampilkan daftar grup (contoh: ""U11 Group A"", ""U11 Group B"") yang dapat ditekan untuk melihat detail.
+",,,,,,Group Stages & Playoff Stages (Group%20Stages%20&%20Playoff%20Stages%203c9c312cb49f8028b1bad7b243f233b7.csv),,To Do,,,"August 27, 2026 5:04 PM"
+"Section ""Playoff Stages"" menampilkan daftar babak playoff (contoh: ""U11 Cup"").
+",,,,,,Group Stages & Playoff Stages (Group%20Stages%20&%20Playoff%20Stages%203c9c312cb49f8028b1bad7b243f233b7.csv),,To Do,,,"August 27, 2026 5:04 PM"
+"Given user menekan salah satu grup, When halaman terbuka, Then user diarahkan ke halaman detail grup dengan 2 tab: ""Table"" dan ""Matches"".
+",,,,,,Group Stages & Playoff Stages (Group%20Stages%20&%20Playoff%20Stages%203c9c312cb49f8028b1bad7b243f233b7.csv),,To Do,,,"August 27, 2026 5:05 PM"
+Detail Grup — Tab Table (Klasemen),,,,,,,,To Do,"Tab ""Table"" menampilkan daftar tim beserta kolom: Team (logo & nama), P (Played), GD (Goal Difference), PTS (Points), diurutkan dari peringkat tertinggi.
+ (Tab%20Table%20menampilkan%20daftar%20tim%20beserta%20kolom%20Tea%203cac312cb49f8048b24be15dec2feef6.csv), Tim dengan peringkat teratas ditandai secara visual (misal warna/badge berbeda).
+ (Tim%20dengan%20peringkat%20teratas%20ditandai%20secara%20visua%203cac312cb49f80e7a55de3d62e6ada7d.csv), Terdapat catatan/keterangan singkat di bawah tabel (contoh: info kualifikasi ke babak berikutnya), jika tersedia.
+ (Terdapat%20catatan%20keterangan%20singkat%20di%20bawah%20tabel%203cac312cb49f80c4bbd8ccb3a60802b7.csv), Section ""More U11 Groups"" menampilkan link ke grup lain dalam kategori usia yang sama untuk navigasi cepat.
+ (Section%20More%20U11%20Groups%20menampilkan%20link%20ke%20grup%20l%203cac312cb49f802aa926c7ddc66f4633.csv), User dapat berpindah ke tab ""Matches"" tanpa harus kembali ke halaman sebelumnya.
+ (User%20dapat%20berpindah%20ke%20tab%20Matches%20tanpa%20harus%20ke%203cac312cb49f8051a2bdf81534902233.csv)",Mobile,"August 28, 2026 11:24 AM"
+"Tab ""Table"" menampilkan daftar tim beserta kolom: Team (logo & nama), P (Played), GD (Goal Difference), PTS (Points), diurutkan dari peringkat tertinggi.
+",,,,,,Detail Grup — Tab Table (Klasemen) (Detail%20Grup%20%E2%80%94%20Tab%20Table%20(Klasemen)%203cac312cb49f802e9379ebcc7c5a8538.csv),,To Do,,,"August 28, 2026 11:25 AM"
+"Tim dengan peringkat teratas ditandai secara visual (misal warna/badge berbeda).
+",,,,,,Detail Grup — Tab Table (Klasemen) (Detail%20Grup%20%E2%80%94%20Tab%20Table%20(Klasemen)%203cac312cb49f802e9379ebcc7c5a8538.csv),,To Do,,,"August 28, 2026 11:25 AM"
+"Terdapat catatan/keterangan singkat di bawah tabel (contoh: info kualifikasi ke babak berikutnya), jika tersedia.
+",,,,,,Detail Grup — Tab Table (Klasemen) (Detail%20Grup%20%E2%80%94%20Tab%20Table%20(Klasemen)%203cac312cb49f802e9379ebcc7c5a8538.csv),,To Do,,,"August 28, 2026 11:25 AM"
+"Section ""More U11 Groups"" menampilkan link ke grup lain dalam kategori usia yang sama untuk navigasi cepat.
+",,,,,,Detail Grup — Tab Table (Klasemen) (Detail%20Grup%20%E2%80%94%20Tab%20Table%20(Klasemen)%203cac312cb49f802e9379ebcc7c5a8538.csv),,To Do,,,"August 28, 2026 11:26 AM"
+"User dapat berpindah ke tab ""Matches"" tanpa harus kembali ke halaman sebelumnya.
+",,,,,,Detail Grup — Tab Table (Klasemen) (Detail%20Grup%20%E2%80%94%20Tab%20Table%20(Klasemen)%203cac312cb49f802e9379ebcc7c5a8538.csv),,To Do,,,"August 28, 2026 11:27 AM"
+Detail Grup — Tab Matches (Jadwal & Hasil),,,,,,,,To Do,"Tab ""Matches"" menampilkan daftar pertandingan dengan info: nama venue/pitch, tanggal & jam, logo & nama tim home vs away, dan skor (jika sudah selesai).
+ (Tab%20Matches%20menampilkan%20daftar%20pertandingan%20dengan%203cac312cb49f8082b92ec63884089360.csv), Pertandingan yang belum berlangsung menampilkan jam tanding, bukan skor.
+ (Pertandingan%20yang%20belum%20berlangsung%20menampilkan%20ja%203cac312cb49f8067a93cd03be45f11fd.csv), Given user menekan salah satu pertandingan, When ditekan, Then user diarahkan ke halaman detail pertandingan (match report).
+ (Given%20user%20menekan%20salah%20satu%20pertandingan,%20When%20d%203cac312cb49f801384bde7632b35b3c5.csv)",Mobile,"August 28, 2026 11:28 AM"
+"Tab ""Matches"" menampilkan daftar pertandingan dengan info: nama venue/pitch, tanggal & jam, logo & nama tim home vs away, dan skor (jika sudah selesai).
+",,,,,,Detail Grup — Tab Matches (Jadwal & Hasil) (Detail%20Grup%20%E2%80%94%20Tab%20Matches%20(Jadwal%20&%20Hasil)%203cac312cb49f8025b0fccd3137dc8f8d.csv),,To Do,,,"August 28, 2026 11:28 AM"
+"Pertandingan yang belum berlangsung menampilkan jam tanding, bukan skor.
+",,,,,,Detail Grup — Tab Matches (Jadwal & Hasil) (Detail%20Grup%20%E2%80%94%20Tab%20Matches%20(Jadwal%20&%20Hasil)%203cac312cb49f8025b0fccd3137dc8f8d.csv),,To Do,,,"August 28, 2026 11:28 AM"
+"Given user menekan salah satu pertandingan, When ditekan, Then user diarahkan ke halaman detail pertandingan (match report).
+",,,,,,Detail Grup — Tab Matches (Jadwal & Hasil) (Detail%20Grup%20%E2%80%94%20Tab%20Matches%20(Jadwal%20&%20Hasil)%203cac312cb49f8025b0fccd3137dc8f8d.csv),,To Do,,,"August 28, 2026 11:28 AM"
+Detail Pertandingan (Match Report),,,,,,,,To Do,"Halaman menampilkan header dengan logo kedua tim dan skor akhir/berjalan (contoh: ""6 – 1"").
+ (Halaman%20menampilkan%20header%20dengan%20logo%20kedua%20tim%20d%203cac312cb49f806da3a9e23c0dc84c05.csv), Section ""Goals"" menampilkan daftar pencetak gol beserta menit gol dan tim pencetak, untuk kedua tim (home & away) secara terpisah/berdampingan.
+ (Section%20Goals%20menampilkan%20daftar%20pencetak%20gol%20bese%203cac312cb49f8092a449ea2bce8a9970.csv), Section ""Highlights"" menampilkan video/klip highlight pertandingan dalam bentuk card (thumbnail, judul, durasi), dan dapat diputar saat ditekan.
+ (Section%20Highlights%20menampilkan%20video%20klip%20highligh%203cac312cb49f80b7adecff7d14d150a2.csv), Section ""Match Details"" menampilkan informasi tambahan seperti venue, wasit, kategori/grup pertandingan (sesuai data yang tersedia).
+ (Section%20Match%20Details%20menampilkan%20informasi%20tambah%203cac312cb49f80ffae47e0f3b40c1b13.csv), Given pertandingan berstatus ""LIVE"", When user membuka halaman ini, Then skor dan data gol dapat berubah/update secara real-time.
+ (Given%20pertandingan%20berstatus%20LIVE%20,%20When%20user%20memb%203cac312cb49f8014af38c3df36876cc4.csv), Terdapat tombol back untuk kembali ke halaman grup/daftar pertandingan sebelumnya.
+ (Terdapat%20tombol%20back%20untuk%20kembali%20ke%20halaman%20grup%203cac312cb49f80a58a48f7619da465a8.csv)",Mobile,"August 28, 2026 11:30 AM"
+"Halaman menampilkan header dengan logo kedua tim dan skor akhir/berjalan (contoh: ""6 – 1"").
+",,,,,,Detail Pertandingan (Match Report) (Detail%20Pertandingan%20(Match%20Report)%203cac312cb49f80f1b774f96013209753.csv),,To Do,,,"August 28, 2026 11:30 AM"
+"Section ""Goals"" menampilkan daftar pencetak gol beserta menit gol dan tim pencetak, untuk kedua tim (home & away) secara terpisah/berdampingan.
+",,,,,,Detail Pertandingan (Match Report) (Detail%20Pertandingan%20(Match%20Report)%203cac312cb49f80f1b774f96013209753.csv),,To Do,,,"August 28, 2026 11:30 AM"
+"Section ""Highlights"" menampilkan video/klip highlight pertandingan dalam bentuk card (thumbnail, judul, durasi), dan dapat diputar saat ditekan.
+",,,,,,Detail Pertandingan (Match Report) (Detail%20Pertandingan%20(Match%20Report)%203cac312cb49f80f1b774f96013209753.csv),,To Do,,,"August 28, 2026 11:30 AM"
+"Section ""Match Details"" menampilkan informasi tambahan seperti venue, wasit, kategori/grup pertandingan (sesuai data yang tersedia).
+",,,,,,Detail Pertandingan (Match Report) (Detail%20Pertandingan%20(Match%20Report)%203cac312cb49f80f1b774f96013209753.csv),,To Do,,,"August 28, 2026 11:30 AM"
+"Given pertandingan berstatus ""LIVE"", When user membuka halaman ini, Then skor dan data gol dapat berubah/update secara real-time.
+",,,,,,Detail Pertandingan (Match Report) (Detail%20Pertandingan%20(Match%20Report)%203cac312cb49f80f1b774f96013209753.csv),,To Do,,,"August 28, 2026 11:31 AM"
+"Terdapat tombol back untuk kembali ke halaman grup/daftar pertandingan sebelumnya.
+",,,,,,Detail Pertandingan (Match Report) (Detail%20Pertandingan%20(Match%20Report)%203cac312cb49f80f1b774f96013209753.csv),,To Do,,,"August 28, 2026 11:32 AM"
+Menu Utama / Sidebar (TYC Menu),,,,,,,,To Do,"Given user menekan ikon hamburger di Home, When sidebar terbuka, Then ditampilkan menu: ""Favorite Team"", ""Coach Dashboard"", dan ""Logout"", beserat logo TYC dan versi aplikasi (contoh ""V1.0"") di bagian bawah.
+ (Given%20user%20menekan%20ikon%20hamburger%20di%20Home,%20When%20si%203cac312cb49f80bd9078f9eb42b95fee.csv), Given user menekan ""Favorite Team"", When ditekan, Then user diarahkan ke halaman daftar tim favorit.
+ (Given%20user%20menekan%20Favorite%20Team%20,%20When%20ditekan,%20T%203cac312cb49f801d952df7049a88d4d1.csv), Given user menekan ""Coach Dashboard"", When ditekan, Then user diarahkan ke halaman Coach Dashboard (khusus akun dengan role coach).
+ (Given%20user%20menekan%20Coach%20Dashboard%20,%20When%20ditekan,%203cac312cb49f8051b6bcc72a07c14925.csv), Given user menekan ""Logout"", When dikonfirmasi, Then sesi user berakhir dan diarahkan kembali ke halaman Login.
+ (Given%20user%20menekan%20Logout%20,%20When%20dikonfirmasi,%20The%203cac312cb49f8090b4c4d8a7de658217.csv), Sidebar dapat ditutup dengan menekan area luar sidebar atau tombol close.
+ (Sidebar%20dapat%20ditutup%20dengan%20menekan%20area%20luar%20sid%203cac312cb49f806baccccbf94ef2a80f.csv)",Mobile,"August 28, 2026 4:33 PM"
+"Given user menekan ikon hamburger di Home, When sidebar terbuka, Then ditampilkan menu: ""Favorite Team"", ""Coach Dashboard"", dan ""Logout"", beserat logo TYC dan versi aplikasi (contoh ""V1.0"") di bagian bawah.
+",,,,,,Menu Utama / Sidebar (TYC Menu) (Menu%20Utama%20Sidebar%20(TYC%20Menu)%203cac312cb49f801d8d6ece91d1665e8d.csv),,To Do,,,"August 28, 2026 4:33 PM"
+"Given user menekan ""Favorite Team"", When ditekan, Then user diarahkan ke halaman daftar tim favorit.
+",,,,,,Menu Utama / Sidebar (TYC Menu) (Menu%20Utama%20Sidebar%20(TYC%20Menu)%203cac312cb49f801d8d6ece91d1665e8d.csv),,To Do,,,"August 28, 2026 4:33 PM"
+"Given user menekan ""Coach Dashboard"", When ditekan, Then user diarahkan ke halaman Coach Dashboard (khusus akun dengan role coach).
+",,,,,,Menu Utama / Sidebar (TYC Menu) (Menu%20Utama%20Sidebar%20(TYC%20Menu)%203cac312cb49f801d8d6ece91d1665e8d.csv),,To Do,,,"August 28, 2026 4:33 PM"
+"Given user menekan ""Logout"", When dikonfirmasi, Then sesi user berakhir dan diarahkan kembali ke halaman Login.
+",,,,,,Menu Utama / Sidebar (TYC Menu) (Menu%20Utama%20Sidebar%20(TYC%20Menu)%203cac312cb49f801d8d6ece91d1665e8d.csv),,To Do,,,"August 28, 2026 4:34 PM"
+"Sidebar dapat ditutup dengan menekan area luar sidebar atau tombol close.
+",,,,,,Menu Utama / Sidebar (TYC Menu) (Menu%20Utama%20Sidebar%20(TYC%20Menu)%203cac312cb49f801d8d6ece91d1665e8d.csv),,To Do,,,"August 28, 2026 4:34 PM"
+Pemilihan Tim (Select a Team),,,,,,,,To Do,"Halaman ""Select a Team"" menampilkan search bar ""Search team"" untuk mencari tim berdasarkan nama.
+ (Halaman%20Select%20a%20Team%20menampilkan%20search%20bar%20Searc%203cac312cb49f8079b117f836f42cee40.csv), Daftar tim ditampilkan dengan logo, nama tim, dan label cabang olahraga (contoh: U13, dsb), mendukung berbagai cabang (Football, Basketball, Baseball, Volleyball).
+ (Daftar%20tim%20ditampilkan%20dengan%20logo,%20nama%20tim,%20dan%20%203cac312cb49f80c7be41c86fec7d7075.csv), Given user mengetik kata kunci di search bar, When hasil pencarian muncul, Then daftar tim otomatis terfilter sesuai kata kunci.
+ (Given%20user%20mengetik%20kata%20kunci%20di%20search%20bar,%20When%203cac312cb49f80d7a249c24f84354b0a.csv), Given user menekan salah satu tim, When ditekan, Then user diarahkan ke halaman Detail Tim.
+ (Given%20user%20menekan%20salah%20satu%20tim,%20When%20ditekan,%20T%203cac312cb49f80788741cfa9a441a65a.csv)",Mobile,"August 28, 2026 4:35 PM"
+"Halaman ""Select a Team"" menampilkan search bar ""Search team"" untuk mencari tim berdasarkan nama.
+",,,,,,Pemilihan Tim (Select a Team) (Pemilihan%20Tim%20(Select%20a%20Team)%203cac312cb49f809a95f5f3578b09502b.csv),,To Do,,,"August 28, 2026 4:35 PM"
+"Daftar tim ditampilkan dengan logo, nama tim, dan label cabang olahraga (contoh: U13, dsb), mendukung berbagai cabang (Football, Basketball, Baseball, Volleyball).
+",,,,,,Pemilihan Tim (Select a Team) (Pemilihan%20Tim%20(Select%20a%20Team)%203cac312cb49f809a95f5f3578b09502b.csv),,To Do,,,"August 28, 2026 4:36 PM"
+"Given user mengetik kata kunci di search bar, When hasil pencarian muncul, Then daftar tim otomatis terfilter sesuai kata kunci.
+",,,,,,Pemilihan Tim (Select a Team) (Pemilihan%20Tim%20(Select%20a%20Team)%203cac312cb49f809a95f5f3578b09502b.csv),,To Do,,,"August 28, 2026 4:36 PM"
+"Given user menekan salah satu tim, When ditekan, Then user diarahkan ke halaman Detail Tim.
+",,,,,,Pemilihan Tim (Select a Team) (Pemilihan%20Tim%20(Select%20a%20Team)%203cac312cb49f809a95f5f3578b09502b.csv),,To Do,,,"August 28, 2026 4:36 PM"
+"Detail Tim — Tab Matches, Players, Stats
+",,,,,,,,To Do,"Header halaman menampilkan logo tim, nama tim, kategori (contoh ""U13 – Group A""), dan ikon ""favorite"" (love/heart) untuk menandai tim sebagai favorit.
+ (Header%20halaman%20menampilkan%20logo%20tim,%20nama%20tim,%20kat%203cac312cb49f8010ac91d15528651480.csv), Tab ""Matches"" menampilkan daftar pertandingan tim tersebut (venue, tanggal, lawan, skor).
+ (Tab%20Matches%20menampilkan%20daftar%20pertandingan%20tim%20te%203cac312cb49f800e8455cc7445433205.csv), Tab ""Players"" menampilkan daftar pemain dengan foto, nama, dan nomor punggung.
+ (Tab%20Players%20menampilkan%20daftar%20pemain%20dengan%20foto,%203cac312cb49f806e8fccd3540f409bbd.csv), Tab ""Stats"" menampilkan ""Team Details"" (Name, Age Group, Group, Squad size, Home Jersey, Away Jersey) dan ""Tournament Stats"" (Total Matches, Matches Won, Goals Scored).
+ (Tab%20Stats%20menampilkan%20Team%20Details%20(Name,%20Age%20Grou%203cac312cb49f805cad8cd802169586ef.csv), Given user menekan ikon favorite (love), When ditekan, Then tim tersebut ditambahkan/dihapus dari daftar ""Team Favorite"" dan ikon berubah status (terisi/kosong).
+ (Given%20user%20menekan%20ikon%20favorite%20(love),%20When%20dite%203cac312cb49f808ab17dff9e68b42edf.csv)",Mobile,"August 28, 2026 4:37 PM"
+"Header halaman menampilkan logo tim, nama tim, kategori (contoh ""U13 – Group A""), dan ikon ""favorite"" (love/heart) untuk menandai tim sebagai favorit.
+",,,,,,"Detail Tim — Tab Matches, Players, Stats
+ (Detail%20Tim%20%E2%80%94%20Tab%20Matches,%20Players,%20Stats%203cac312cb49f80feb314fb6b95a2213c.csv)",,To Do,,,"August 28, 2026 4:37 PM"
+"Tab ""Matches"" menampilkan daftar pertandingan tim tersebut (venue, tanggal, lawan, skor).
+",,,,,,"Detail Tim — Tab Matches, Players, Stats
+ (Detail%20Tim%20%E2%80%94%20Tab%20Matches,%20Players,%20Stats%203cac312cb49f80feb314fb6b95a2213c.csv)",,To Do,,,"August 28, 2026 4:37 PM"
+"Tab ""Players"" menampilkan daftar pemain dengan foto, nama, dan nomor punggung.
+",,,,,,"Detail Tim — Tab Matches, Players, Stats
+ (Detail%20Tim%20%E2%80%94%20Tab%20Matches,%20Players,%20Stats%203cac312cb49f80feb314fb6b95a2213c.csv)",,To Do,,,"August 28, 2026 4:37 PM"
+"Tab ""Stats"" menampilkan ""Team Details"" (Name, Age Group, Group, Squad size, Home Jersey, Away Jersey) dan ""Tournament Stats"" (Total Matches, Matches Won, Goals Scored).
+",,,,,,"Detail Tim — Tab Matches, Players, Stats
+ (Detail%20Tim%20%E2%80%94%20Tab%20Matches,%20Players,%20Stats%203cac312cb49f80feb314fb6b95a2213c.csv)",,To Do,,,"August 28, 2026 4:38 PM"
+"Given user menekan ikon favorite (love), When ditekan, Then tim tersebut ditambahkan/dihapus dari daftar ""Team Favorite"" dan ikon berubah status (terisi/kosong).
+",,,,,,"Detail Tim — Tab Matches, Players, Stats
+ (Detail%20Tim%20%E2%80%94%20Tab%20Matches,%20Players,%20Stats%203cac312cb49f80feb314fb6b95a2213c.csv)",,To Do,,,"August 28, 2026 4:38 PM"
+Favorite Team,,,,,,,,To Do,"Halaman ""Team Favorite"" menampilkan daftar tim yang telah ditandai favorit oleh user, lengkap dengan logo dan nama tim.
+ (Halaman%20Team%20Favorite%20menampilkan%20daftar%20tim%20yang%20%203cac312cb49f8091b0dfdf522ea051b3.csv), Terdapat tombol ""+"" di pojok kanan atas untuk menambah tim favorit baru (mengarah ke halaman ""Select a Team"").
+ (Terdapat%20tombol%20+%20di%20pojok%20kanan%20atas%20untuk%20menamb%203cac312cb49f8057b44aca368d1eca44.csv), Given user menekan salah satu tim pada daftar favorit, When ditekan, Then user diarahkan ke halaman detail tim tersebut.
+ (Given%20user%20menekan%20salah%20satu%20tim%20pada%20daftar%20favo%203cac312cb49f8037b11bcb4e7db3124a.csv), Given daftar favorit kosong, When halaman dibuka, Then ditampilkan pesan/empty state yang mengarahkan user untuk menambah tim favorit.
+ (Given%20daftar%20favorit%20kosong,%20When%20halaman%20dibuka,%20%203cac312cb49f8052ad3dd95db5a562cf.csv), User dapat menghapus tim dari daftar favorit (misal melalui swipe atau menekan ikon favorite pada halaman detail tim).
+ (User%20dapat%20menghapus%20tim%20dari%20daftar%20favorit%20(misa%203cac312cb49f8041bf02c6b39411884c.csv)",Mobile,"August 28, 2026 4:39 PM"
+"Halaman ""Team Favorite"" menampilkan daftar tim yang telah ditandai favorit oleh user, lengkap dengan logo dan nama tim.
+",,,,,,Favorite Team (Favorite%20Team%203cac312cb49f80768abbfe93da45c85c.csv),,To Do,,,"August 28, 2026 4:39 PM"
+"Terdapat tombol ""+"" di pojok kanan atas untuk menambah tim favorit baru (mengarah ke halaman ""Select a Team"").
+",,,,,,Favorite Team (Favorite%20Team%203cac312cb49f80768abbfe93da45c85c.csv),,To Do,,,"August 28, 2026 4:41 PM"
+"Given user menekan salah satu tim pada daftar favorit, When ditekan, Then user diarahkan ke halaman detail tim tersebut.
+",,,,,,Favorite Team (Favorite%20Team%203cac312cb49f80768abbfe93da45c85c.csv),,To Do,,,"August 28, 2026 4:42 PM"
+"Given daftar favorit kosong, When halaman dibuka, Then ditampilkan pesan/empty state yang mengarahkan user untuk menambah tim favorit.
+",,,,,,Favorite Team (Favorite%20Team%203cac312cb49f80768abbfe93da45c85c.csv),,To Do,,,"August 28, 2026 4:42 PM"
+"User dapat menghapus tim dari daftar favorit (misal melalui swipe atau menekan ikon favorite pada halaman detail tim).
+",,,,,,Favorite Team (Favorite%20Team%203cac312cb49f80768abbfe93da45c85c.csv),,To Do,,,"August 28, 2026 4:42 PM"
+Coach Dashboard — Pemilihan Tim,,,,,,,,To Do,"Given user (role coach) menekan ""Coach Dashboard"" dari sidebar, When halaman terbuka, Then ditampilkan section ""Select a Team to Manage"" berisi daftar tim yang di-assign ke coach tersebut (logo, nama, kategori usia).
+ (Given%20user%20(role%20coach)%20menekan%20Coach%20Dashboard%20da%203cac312cb49f807cbdaec6f763c3ea63.csv), Ditampilkan pula section kedua berisi ""Tournament Rules"" dan ""Pitch"" sebagai akses cepat ke informasi turnamen dan venue.
+ (Ditampilkan%20pula%20section%20kedua%20berisi%20Tournament%20R%203cac312cb49f80a69d1efa36b370e2e5.csv), Given user menekan salah satu tim, When ditekan, Then user diarahkan ke halaman ""Team Management"" untuk tim tersebut.
+ (Given%20user%20menekan%20salah%20satu%20tim,%20When%20ditekan,%20T%203cac312cb49f8034a794cd3eb2667e94.csv), Given user menekan ""Tournament Rules"", When ditekan, Then ditampilkan halaman berisi peraturan turnamen (teks/dokumen).
+ (Given%20user%20menekan%20Tournament%20Rules%20,%20When%20ditekan%203cac312cb49f800fb4fafdd7c6a38da7.csv)",Mobile,"August 28, 2026 4:43 PM"
+"Given user (role coach) menekan ""Coach Dashboard"" dari sidebar, When halaman terbuka, Then ditampilkan section ""Select a Team to Manage"" berisi daftar tim yang di-assign ke coach tersebut (logo, nama, kategori usia).
+",,,,,,Coach Dashboard — Pemilihan Tim (Coach%20Dashboard%20%E2%80%94%20Pemilihan%20Tim%203cac312cb49f80ca8e14e622794500f0.csv),,To Do,,,"August 28, 2026 4:43 PM"
+"Ditampilkan pula section kedua berisi ""Tournament Rules"" dan ""Pitch"" sebagai akses cepat ke informasi turnamen dan venue.
+",,,,,,Coach Dashboard — Pemilihan Tim (Coach%20Dashboard%20%E2%80%94%20Pemilihan%20Tim%203cac312cb49f80ca8e14e622794500f0.csv),,To Do,,,"August 28, 2026 4:43 PM"
+"Given user menekan salah satu tim, When ditekan, Then user diarahkan ke halaman ""Team Management"" untuk tim tersebut.
+",,,,,,Coach Dashboard — Pemilihan Tim (Coach%20Dashboard%20%E2%80%94%20Pemilihan%20Tim%203cac312cb49f80ca8e14e622794500f0.csv),,To Do,,,"August 28, 2026 4:44 PM"
+"Given user menekan ""Tournament Rules"", When ditekan, Then ditampilkan halaman berisi peraturan turnamen (teks/dokumen).
+",,,,,,Coach Dashboard — Pemilihan Tim (Coach%20Dashboard%20%E2%80%94%20Pemilihan%20Tim%203cac312cb49f80ca8e14e622794500f0.csv),,To Do,,,"August 28, 2026 4:44 PM"
+Coach Dashboard — Team Management (Setup Checklist),,,,,,,,To Do,"Halaman menampilkan header tim (logo, nama, kategori) dengan tab ""Detail"" dan ""Player"", serta ikon edit (pensil) untuk mengubah info dasar tim.
+ (Halaman%20menampilkan%20header%20tim%20(logo,%20nama,%20katego%203cac312cb49f806c93cdc7d159eb6dca.csv), Section ""Team Setup"" menampilkan progress bar yang mencerminkan persentase kelengkapan setup tim.
+ (Section%20Team%20Setup%20menampilkan%20progress%20bar%20yang%20m%203cac312cb49f804eb6bac470c0f3e2bb.csv), Checklist menampilkan 3 item: ""Confirm coach names"", ""Set jersey colours"", ""Register players"", masing-masing dengan indikator status: centang hijau (selesai) atau tanda peringatan kuning (belum lengkap/perlu tindakan).
+ (Checklist%20menampilkan%203%20item%20Confirm%20coach%20names%20,%203cac312cb49f80379c52e451e677fbeb.csv), Given user menekan salah satu item checklist yang belum selesai, When ditekan, Then user diarahkan ke form terkait (Confirm Coach / Jersey Colours / Add Player).
+ (Given%20user%20menekan%20salah%20satu%20item%20checklist%20yang%20%203cac312cb49f80139908d3fe12695488.csv), Section ""Overview"" menampilkan ""Max Squad Size"", ""Player Registered"", dan ""Slots Remaining"" yang otomatis terhitung berdasarkan jumlah pemain terdaftar.
+ (Section%20Overview%20menampilkan%20Max%20Squad%20Size%20,%20Play%203cac312cb49f80e29e16c03bfbc7280a.csv), Tab ""Player"" menampilkan daftar pemain yang sudah terdaftar dalam bentuk grid foto pemain.
+ (Tab%20Player%20menampilkan%20daftar%20pemain%20yang%20sudah%20te%203cac312cb49f8011b34ed9c81f8dde6a.csv)",Mobile,"August 28, 2026 4:45 PM"
+"Halaman menampilkan header tim (logo, nama, kategori) dengan tab ""Detail"" dan ""Player"", serta ikon edit (pensil) untuk mengubah info dasar tim.
+",,,,,,Coach Dashboard — Team Management (Setup Checklist) (Coach%20Dashboard%20%E2%80%94%20Team%20Management%20(Setup%20Checklist%203cac312cb49f80918362e568a649bfeb.csv),,To Do,,,"August 28, 2026 4:45 PM"
+"Section ""Team Setup"" menampilkan progress bar yang mencerminkan persentase kelengkapan setup tim.
+",,,,,,Coach Dashboard — Team Management (Setup Checklist) (Coach%20Dashboard%20%E2%80%94%20Team%20Management%20(Setup%20Checklist%203cac312cb49f80918362e568a649bfeb.csv),,To Do,,,"August 28, 2026 4:45 PM"
+"Checklist menampilkan 3 item: ""Confirm coach names"", ""Set jersey colours"", ""Register players"", masing-masing dengan indikator status: centang hijau (selesai) atau tanda peringatan kuning (belum lengkap/perlu tindakan).
+",,,,,,Coach Dashboard — Team Management (Setup Checklist) (Coach%20Dashboard%20%E2%80%94%20Team%20Management%20(Setup%20Checklist%203cac312cb49f80918362e568a649bfeb.csv),,To Do,,,"August 28, 2026 4:46 PM"
+"Given user menekan salah satu item checklist yang belum selesai, When ditekan, Then user diarahkan ke form terkait (Confirm Coach / Jersey Colours / Add Player).
+",,,,,,Coach Dashboard — Team Management (Setup Checklist) (Coach%20Dashboard%20%E2%80%94%20Team%20Management%20(Setup%20Checklist%203cac312cb49f80918362e568a649bfeb.csv),,To Do,,,"August 28, 2026 4:46 PM"
+"Section ""Overview"" menampilkan ""Max Squad Size"", ""Player Registered"", dan ""Slots Remaining"" yang otomatis terhitung berdasarkan jumlah pemain terdaftar.
+",,,,,,Coach Dashboard — Team Management (Setup Checklist) (Coach%20Dashboard%20%E2%80%94%20Team%20Management%20(Setup%20Checklist%203cac312cb49f80918362e568a649bfeb.csv),,To Do,,,"August 28, 2026 4:46 PM"
+"Tab ""Player"" menampilkan daftar pemain yang sudah terdaftar dalam bentuk grid foto pemain.
+",,,,,,Coach Dashboard — Team Management (Setup Checklist) (Coach%20Dashboard%20%E2%80%94%20Team%20Management%20(Setup%20Checklist%203cac312cb49f80918362e568a649bfeb.csv),,To Do,,,"August 28, 2026 4:46 PM"
+Form Confirm Coach,,,,,,,,To Do,"Form menampilkan judul ""Confirm Coach"" dan keterangan ""Enter the name of the coaches or officials that will receive a coach pass for this team"".
+ (Form%20menampilkan%20judul%20Confirm%20Coach%20dan%20keteranga%203cac312cb49f805eac21fa5055fdf623.csv), Terdapat minimal 2 field input: ""Coach 1"" dan ""Coach 2"" (dapat diperluas sesuai kebutuhan).
+ (Terdapat%20minimal%202%20field%20input%20Coach%201%20dan%20Coach%202%203cac312cb49f80719361f46c2a49d59d.csv), Given user mengisi minimal Coach 1, When menekan tombol ""Save"", Then data tersimpan dan status checklist ""Confirm coach names"" berubah menjadi selesai (centang hijau).
+ (Given%20user%20mengisi%20minimal%20Coach%201,%20When%20menekan%20t%203cac312cb49f80f8a977f476e5b2a2c6.csv), Given field Coach 1 dikosongkan, When menekan ""Save"", Then muncul validasi bahwa field wajib diisi.
+ (Given%20field%20Coach%201%20dikosongkan,%20When%20menekan%20Save%203cac312cb49f8037ac5af0910fb0beda.csv), Setelah berhasil disimpan, user diarahkan kembali ke halaman Team Management.
+ (Setelah%20berhasil%20disimpan,%20user%20diarahkan%20kembali%20%203cac312cb49f800aa7ecdd774cb5c46a.csv)",Mobile,"August 28, 2026 4:49 PM"
+"Form menampilkan judul ""Confirm Coach"" dan keterangan ""Enter the name of the coaches or officials that will receive a coach pass for this team"".
+",,,,,,Form Confirm Coach (Form%20Confirm%20Coach%203cac312cb49f80499919f6e23737777e.csv),,To Do,,,"August 28, 2026 4:49 PM"
+"Terdapat minimal 2 field input: ""Coach 1"" dan ""Coach 2"" (dapat diperluas sesuai kebutuhan).
+",,,,,,Form Confirm Coach (Form%20Confirm%20Coach%203cac312cb49f80499919f6e23737777e.csv),,To Do,,,"August 28, 2026 4:49 PM"
+"Given user mengisi minimal Coach 1, When menekan tombol ""Save"", Then data tersimpan dan status checklist ""Confirm coach names"" berubah menjadi selesai (centang hijau).
+",,,,,,Form Confirm Coach (Form%20Confirm%20Coach%203cac312cb49f80499919f6e23737777e.csv),,To Do,,,"August 28, 2026 4:49 PM"
+"Given field Coach 1 dikosongkan, When menekan ""Save"", Then muncul validasi bahwa field wajib diisi.
+",,,,,,Form Confirm Coach (Form%20Confirm%20Coach%203cac312cb49f80499919f6e23737777e.csv),,To Do,,,"August 28, 2026 4:50 PM"
+"Setelah berhasil disimpan, user diarahkan kembali ke halaman Team Management.
+",,,,,,Form Confirm Coach (Form%20Confirm%20Coach%203cac312cb49f80499919f6e23737777e.csv),,To Do,,,"August 28, 2026 4:50 PM"
+Form Jersey Colours,,,,,,,,To Do,"Form menampilkan judul ""Jersey Colours"" dan keterangan ""Please confirm your jersey colours for [Nama Tim]"".
+ (Form%20menampilkan%20judul%20Jersey%20Colours%20dan%20keterang%203cac312cb49f80da955ef4bbd2657efa.csv), Terdapat field/pilihan warna untuk ""Home Jersey"" dan ""Away Jersey"" (dapat berupa dropdown warna atau color picker).
+ (Terdapat%20field%20pilihan%20warna%20untuk%20Home%20Jersey%20dan%203cac312cb49f8054a7c4d810ada01ff8.csv), Given user memilih warna untuk kedua field, When menekan ""Save"", Then data tersimpan dan status checklist ""Set jersey colours"" berubah menjadi selesai.
+ (Given%20user%20memilih%20warna%20untuk%20kedua%20field,%20When%20m%203cac312cb49f80759809e66a442b6864.csv), Data warna jersey yang tersimpan tampil pada tab ""Stats"" di halaman Detail Tim (Home Jersey, Away Jersey).
+ (Data%20warna%20jersey%20yang%20tersimpan%20tampil%20pada%20tab%20S%203cac312cb49f809697e6c7ca5c72b3ab.csv)",Mobile,"August 28, 2026 4:54 PM"
+"Form menampilkan judul ""Jersey Colours"" dan keterangan ""Please confirm your jersey colours for [Nama Tim]"".
+",,,,,,Form Jersey Colours (Form%20Jersey%20Colours%203cac312cb49f80c89440c55481b258e0.csv),,To Do,,,"August 28, 2026 4:55 PM"
+"Terdapat field/pilihan warna untuk ""Home Jersey"" dan ""Away Jersey"" (dapat berupa dropdown warna atau color picker).
+",,,,,,Form Jersey Colours (Form%20Jersey%20Colours%203cac312cb49f80c89440c55481b258e0.csv),,To Do,,,"August 28, 2026 4:55 PM"
+"Given user memilih warna untuk kedua field, When menekan ""Save"", Then data tersimpan dan status checklist ""Set jersey colours"" berubah menjadi selesai.
+",,,,,,Form Jersey Colours (Form%20Jersey%20Colours%203cac312cb49f80c89440c55481b258e0.csv),,To Do,,,"August 28, 2026 4:55 PM"
+"Data warna jersey yang tersimpan tampil pada tab ""Stats"" di halaman Detail Tim (Home Jersey, Away Jersey).
+",,,,,,Form Jersey Colours (Form%20Jersey%20Colours%203cac312cb49f80c89440c55481b258e0.csv),,To Do,,,"August 28, 2026 4:55 PM"
+Form Add Player,,,,,,,,To Do,"Form menampilkan judul ""Add Player"" dan keterangan ""Fill the form below to add new player"".
+ (Form%20menampilkan%20judul%20Add%20Player%20dan%20keterangan%20F%203cac312cb49f801686aeed5c36631de7.csv), Terdapat field input: ""Name"", ""Position"", dan ""Number"".
+ (Terdapat%20field%20input%20Name%20,%20Position%20,%20dan%20Number%203cac312cb49f804196bdf07b8b2a28a3.csv), Given seluruh field wajib diisi dengan benar, When user menekan ""Save"", Then pemain baru ditambahkan ke daftar pemain tim dan muncul pada tab ""Player"".
+ (Given%20seluruh%20field%20wajib%20diisi%20dengan%20benar,%20When%203cac312cb49f80f28acdd9bfdbcb46eb.csv), Given nomor punggung yang diinput sudah dipakai pemain lain dalam tim yang sama, When menekan ""Save"", Then sistem menampilkan pesan validasi bahwa nomor sudah digunakan.
+ (Given%20nomor%20punggung%20yang%20diinput%20sudah%20dipakai%20pe%203cac312cb49f80b1a81bc423cb10cbfb.csv), Given jumlah pemain terdaftar sudah mencapai ""Max Squad Size"", When user mencoba menambah pemain baru, Then sistem menampilkan peringatan bahwa kuota skuad sudah penuh.
+ (Given%20jumlah%20pemain%20terdaftar%20sudah%20mencapai%20Max%20S%203cac312cb49f80828f79ebbf23f8f7f2.csv), Setelah berhasil disimpan, ""Player Registered"" dan ""Slots Remaining"" pada halaman Overview otomatis ter-update.
+ (Setelah%20berhasil%20disimpan,%20Player%20Registered%20dan%20S%203cac312cb49f809bb645ee3279e13059.csv)",Mobile,"August 28, 2026 4:57 PM"
+"Form menampilkan judul ""Add Player"" dan keterangan ""Fill the form below to add new player"".
+",,,,,,Form Add Player (Form%20Add%20Player%203cac312cb49f8002a428cf6b4a1eb8b0.csv),,To Do,,,"August 28, 2026 4:57 PM"
+"Terdapat field input: ""Name"", ""Position"", dan ""Number"".
+",,,,,,Form Add Player (Form%20Add%20Player%203cac312cb49f8002a428cf6b4a1eb8b0.csv),,To Do,,,"August 28, 2026 4:57 PM"
+"Given seluruh field wajib diisi dengan benar, When user menekan ""Save"", Then pemain baru ditambahkan ke daftar pemain tim dan muncul pada tab ""Player"".
+",,,,,,Form Add Player (Form%20Add%20Player%203cac312cb49f8002a428cf6b4a1eb8b0.csv),,To Do,,,"August 28, 2026 4:57 PM"
+"Given nomor punggung yang diinput sudah dipakai pemain lain dalam tim yang sama, When menekan ""Save"", Then sistem menampilkan pesan validasi bahwa nomor sudah digunakan.
+",,,,,,Form Add Player (Form%20Add%20Player%203cac312cb49f8002a428cf6b4a1eb8b0.csv),,To Do,,,"August 28, 2026 4:57 PM"
+"Given jumlah pemain terdaftar sudah mencapai ""Max Squad Size"", When user mencoba menambah pemain baru, Then sistem menampilkan peringatan bahwa kuota skuad sudah penuh.
+",,,,,,Form Add Player (Form%20Add%20Player%203cac312cb49f8002a428cf6b4a1eb8b0.csv),,To Do,,,"August 28, 2026 4:58 PM"
+"Setelah berhasil disimpan, ""Player Registered"" dan ""Slots Remaining"" pada halaman Overview otomatis ter-update.
+",,,,,,Form Add Player (Form%20Add%20Player%203cac312cb49f8002a428cf6b4a1eb8b0.csv),,To Do,,,"August 28, 2026 4:58 PM"
+Notifikasi,,,,,,,,To Do,"Ikon bell pada Home menampilkan badge/indikator jika ada notifikasi baru yang belum dibaca.
+ (Ikon%20bell%20pada%20Home%20menampilkan%20badge%20indikator%20ji%203cac312cb49f80638fc6c8f2d3e08ba4.csv), Given user menekan ikon bell, When halaman terbuka, Then ditampilkan daftar notifikasi terurut dari yang terbaru.
+ (Given%20user%20menekan%20ikon%20bell,%20When%20halaman%20terbuka%203cac312cb49f808383a7cad3057102e0.csv), Given user menekan salah satu notifikasi terkait pertandingan, When ditekan, Then user diarahkan langsung ke halaman detail pertandingan terkait.
+ (Given%20user%20menekan%20salah%20satu%20notifikasi%20terkait%20p%203cac312cb49f805a887cd1c9a908f9f6.csv), Notifikasi yang sudah dibaca ditandai berbeda secara visual dari yang belum dibaca.
+ (Notifikasi%20yang%20sudah%20dibaca%20ditandai%20berbeda%20seca%203cac312cb49f808abacfce7032ad9581.csv)",Mobile,"August 28, 2026 4:59 PM"
+"Ikon bell pada Home menampilkan badge/indikator jika ada notifikasi baru yang belum dibaca.
+",,,,,,Notifikasi (Notifikasi%203cac312cb49f80ebb17cce7dabc446c3.csv),,To Do,,,"August 28, 2026 4:59 PM"
+"Given user menekan ikon bell, When halaman terbuka, Then ditampilkan daftar notifikasi terurut dari yang terbaru.
+",,,,,,Notifikasi (Notifikasi%203cac312cb49f80ebb17cce7dabc446c3.csv),,To Do,,,"August 28, 2026 4:59 PM"
+"Given user menekan salah satu notifikasi terkait pertandingan, When ditekan, Then user diarahkan langsung ke halaman detail pertandingan terkait.
+",,,,,,Notifikasi (Notifikasi%203cac312cb49f80ebb17cce7dabc446c3.csv),,To Do,,,"August 28, 2026 4:59 PM"
+"Notifikasi yang sudah dibaca ditandai berbeda secara visual dari yang belum dibaca.
+",,,,,,Notifikasi (Notifikasi%203cac312cb49f80ebb17cce7dabc446c3.csv),,To Do,,,"August 28, 2026 4:59 PM"
+Notes,,,,,,,,To Do,,Mobile,"August 28, 2026 5:01 PM"

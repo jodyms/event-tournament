@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "mockup_manage_team_team_detail_screen",
+      "label": "Team Detail Screen",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_manage_team_detail_player_tabs",
+      "label": "Detail and Player Tabs",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_manage_team_team_setup_progress",
+      "label": "Team Setup Progress",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_manage_team_confirm_coach_names",
+      "label": "Confirm Coach Names",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_manage_team_set_jersey_colours",
+      "label": "Set Jersey Colours",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_manage_team_register_players",
+      "label": "Register Players",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_manage_team_team_overview",
+      "label": "Team Overview",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "mockup_manage_team_team_detail_screen",
+      "target": "mockup_manage_team_detail_player_tabs",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_manage_team_team_detail_screen",
+      "target": "mockup_manage_team_team_setup_progress",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_manage_team_team_setup_progress",
+      "target": "mockup_manage_team_confirm_coach_names",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_manage_team_team_setup_progress",
+      "target": "mockup_manage_team_set_jersey_colours",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_manage_team_team_setup_progress",
+      "target": "mockup_manage_team_register_players",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_manage_team_team_detail_screen",
+      "target": "mockup_manage_team_team_overview",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "mockup_manage_team_setup_checklist",
+      "label": "Team Setup Checklist",
+      "nodes": [
+        "mockup_manage_team_confirm_coach_names",
+        "mockup_manage_team_set_jersey_colours",
+        "mockup_manage_team_register_players"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Manage Team.png"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

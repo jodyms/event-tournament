@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "mockup_favorite_team_team_favorite_screen",
+      "label": "Team Favorite Screen",
+      "file_type": "image",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_favorite_team_favorite_team_list",
+      "label": "Favorite Team List",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_favorite_team_age_division_badge",
+      "label": "Age Division Badge",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_favorite_team_add_team_action",
+      "label": "Add Team Action",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mockup_favorite_team_team_detail_navigation",
+      "label": "Team Detail Navigation",
+      "file_type": "concept",
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "mockup_favorite_team_team_favorite_screen",
+      "target": "mockup_favorite_team_favorite_team_list",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_favorite_team_favorite_team_list",
+      "target": "mockup_favorite_team_age_division_badge",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_favorite_team_team_favorite_screen",
+      "target": "mockup_favorite_team_add_team_action",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mockup_favorite_team_favorite_team_list",
+      "target": "mockup_favorite_team_team_detail_navigation",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "C:\\Users\\Jody\\Desktop\\event-tournament\\mockup\\Favorite Team.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
