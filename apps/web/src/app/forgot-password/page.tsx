@@ -1,7 +1,8 @@
 'use client';
 
 import { useActionState } from 'react';
-import { requestResetAction, type ActionState } from '@/app/actions';
+import { requestResetAction } from '@/app/actions/auth';
+import type { ActionState } from '@/app/actions/shared';
 
 export default function ForgotPasswordPage() {
   const [state, action, pending] = useActionState(requestResetAction, {} as ActionState);

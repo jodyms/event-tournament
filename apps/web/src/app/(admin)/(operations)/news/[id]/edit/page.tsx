@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { eq } from 'drizzle-orm';
-import { NewsEditor } from '@/components/news-editor';
+import { NewsEditor } from '@/components/features/news-editor';
 import { db } from '@/db/client';
 import { news } from '@/db/schema';
 

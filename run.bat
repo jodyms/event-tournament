@@ -10,26 +10,13 @@ if errorlevel 1 (
 )
 
 if not exist "node_modules\" (
-  echo Menginstal dependensi aplikasi mobile...
+  echo Menginstal dependensi monorepo...
   call npm install
   if errorlevel 1 (
-    echo npm install di folder utama gagal.
+    echo npm install gagal.
     pause
     exit /b 1
   )
-)
-
-if not exist "apps\web\node_modules\" (
-  echo Menginstal dependensi admin web...
-  pushd "apps\web"
-  call npm install
-  if errorlevel 1 (
-    echo npm install di apps\web gagal.
-    popd
-    pause
-    exit /b 1
-  )
-  popd
 )
 
 if not exist "apps\web\.env" (
@@ -46,7 +33,7 @@ echo Aplikasi mobile terbuka di jendela Expo.
 echo Tutup masing-masing jendela untuk menghentikan server.
 echo.
 
-start "TYC Admin" /D "%~dp0apps\web" cmd /k npm run dev
-start "TYC Mobile" /D "%~dp0" cmd /k npm start
+start "TYC Admin" /D "%~dp0" cmd /k npm run dev:web
+start "TYC Mobile" /D "%~dp0" cmd /k npm run dev:mobile
 
 endlocal

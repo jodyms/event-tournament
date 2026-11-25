@@ -1,4 +1,4 @@
-import { TournamentBoard } from '@/components/tournament-board';
+import { TournamentBoard } from '@/components/features/tournament-board';
 
 export default async function Page({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<Record<string, string | undefined>> }) {
   const { id } = await params;

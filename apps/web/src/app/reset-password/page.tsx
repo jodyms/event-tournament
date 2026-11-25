@@ -1,7 +1,8 @@
 'use client';
 
 import { useActionState } from 'react';
-import { resetPasswordAction, type ActionState } from '@/app/actions';
+import { resetPasswordAction } from '@/app/actions/auth';
+import type { ActionState } from '@/app/actions/shared';
 
 export default function ResetPasswordPage() {
   const [state, action, pending] = useActionState(resetPasswordAction, {} as ActionState);

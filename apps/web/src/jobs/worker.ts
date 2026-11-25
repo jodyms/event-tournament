@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import { pool } from '@/db/client';
-import { processLocalOutbox } from '@/lib/integrations';
+import { processLocalOutbox } from '@/lib/infra/integrations';
 
 async function run() {
   const count = await processLocalOutbox();

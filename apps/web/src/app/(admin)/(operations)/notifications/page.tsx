@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { and, asc, count, desc, eq, ilike, isNull, type SQL } from 'drizzle-orm';
-import { sendNotificationAction } from '@/app/figma-actions';
-import { BoundForm, SubmitButton } from '@/components/bound-form';
-import { DataTable } from '@/components/data-table';
-import { ListFilters } from '@/components/list-filters';
-import { Modal } from '@/components/modal';
-import { Pager } from '@/components/pager';
+import { sendNotificationAction } from '@/app/actions/content';
+import { BoundForm, SubmitButton } from '@/components/ui/bound-form';
+import { DataTable } from '@/components/ui/data-table';
+import { ListFilters } from '@/components/ui/list-filters';
+import { Modal } from '@/components/ui/modal';
+import { Pager } from '@/components/ui/pager';
 import { db } from '@/db/client';
 import { notifications, teams } from '@/db/schema';
-import { pageWindow, shortDate, withParams } from '@/lib/tournament-status';
+import { pageWindow, shortDate, withParams } from '@/lib/domain/tournament-status';
 
 export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | undefined>> }) {
   const query = await searchParams;

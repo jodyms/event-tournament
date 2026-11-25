@@ -1,6 +1,6 @@
 import { readFile } from 'fs/promises';
 import path from 'path';
-import { uploadDirectory } from '@/lib/uploads';
+import { uploadDirectory } from '@/lib/infra/uploads';
 
 const types: Record<string, string> = { png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif' };
 

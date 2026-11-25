@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import { useActionState, useState } from 'react';
-import { loginAction, type ActionState } from '@/app/actions';
+import { loginAction } from '@/app/actions/auth';
+import type { ActionState } from '@/app/actions/shared';
 
 export default function LoginPage() {
   const [state, action, pending] = useActionState(loginAction, {} as ActionState);

@@ -38,11 +38,6 @@ yarn-error.*
 # Next.js
 .next/
 
-# local verification and bootstrap copies
-.expo-bootstrap/
-.expo-verify/
-.web-verify/
-
 # nested checkout inside generated graph output
 graphify-out/.bootstrap-template/
 
@@ -52,7 +47,10 @@ graphify-out/.bootstrap-template/
 # generated native folders
 /ios
 /android
+apps/mobile/ios/
+apps/mobile/android/
 
-# admin uploads
+# admin uploads & local integration artifacts
 apps/web/storage/uploads/*
 !apps/web/storage/uploads/.gitkeep
+apps/web/local-data/

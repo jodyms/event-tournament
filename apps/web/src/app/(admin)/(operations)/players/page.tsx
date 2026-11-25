@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { and, asc, count, eq, ilike, type SQL } from 'drizzle-orm';
-import { addPlayerAction, transferPlayerAction } from '@/app/figma-actions';
-import { BoundForm, SubmitButton } from '@/components/bound-form';
-import { DataTable, RowMenu, StatusPill } from '@/components/data-table';
-import { ListFilters } from '@/components/list-filters';
-import { Modal } from '@/components/modal';
-import { Pager } from '@/components/pager';
+import { addPlayerAction, transferPlayerAction } from '@/app/actions/teams';
+import { BoundForm, SubmitButton } from '@/components/ui/bound-form';
+import { DataTable, RowMenu, StatusPill } from '@/components/ui/data-table';
+import { ListFilters } from '@/components/ui/list-filters';
+import { Modal } from '@/components/ui/modal';
+import { Pager } from '@/components/ui/pager';
 import { db } from '@/db/client';
 import { players, teams } from '@/db/schema';
-import { pageWindow, withParams } from '@/lib/tournament-status';
+import { pageWindow, withParams } from '@/lib/domain/tournament-status';
 
 const approvalTone: Record<string, string> = { APPROVED: 'success', PENDING: 'warning', REJECTED: 'danger', NOT_STARTED: 'info' };
 
@@ -30,7 +30,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     <header className="figma-heading"><div><h1>Players</h1><p>Approved players are visible to the mobile app.</p></div><Link className="dark-button" href={withParams('/players', keep, { modal: 'add-player' })}>Add player</Link></header>
     <div className="figma-panel module-panel">
       <ListFilters action="/players" query={query.q} placeholder="Search player" filters={[{ name: 'teamId', label: 'All teams', value: query.teamId, options: clubRows.map((team) => ({ value: team.id, label: team.name })) }, { name: 'approval', label: 'All status', value: query.approval, options: [{ value: 'APPROVED', label: 'Approved' }, { value: 'PENDING', label: 'Pending' }, { value: 'REJECTED', label: 'Rejected' }, { value: 'NOT_STARTED', label: 'Not started' }] }]} />
-      <DataTable columns={['Player', 'Team', 'Jersey', 'Position', 'Status', '']} empty="No player matches this filter." rows={rows.map((row) => ({ id: row.player.id, cells: [row.player.name, row.team.name, row.player.jerseyNumber, row.player.position || '—', <StatusPill key={row.player.id} label={row.player.approvalStatus} tone={approvalTone[row.player.approvalStatus] ?? 'info'} />, <RowMenu items={[{ href: withParams('/players', keep, { modal: 'player', id: row.player.id }), label: 'Detail' }]} />] }))} />
+      <DataTable columns={['Player', 'Team', 'Jersey', 'Position', 'Status', '']} empty="No player matches this filter." rows={rows.map((row) => { const detailHref = withParams('/players', keep, { modal: 'player', id: row.player.id }); return { id: row.player.id, cells: [<Link className="row-link" href={detailHref} key={row.player.id}>{row.player.name}</Link>, row.team.name, row.player.jerseyNumber, row.player.position || '—', <StatusPill key={row.player.id} label={row.player.approvalStatus} tone={approvalTone[row.player.approvalStatus] ?? 'info'} />, <RowMenu items={[{ href: detailHref, label: 'Detail' }]} />] }; })} />
       <Pager page={window.page} pages={window.pages} start={window.start} end={window.end} total={total} href={(page) => withParams('/players', keep, { page: String(page) })} />
     </div>
     {query.modal === 'add-player' && <Modal closeHref={close} title="Add player"><BoundForm action={addPlayerAction}><input name="back" type="hidden" value={close} /><label>Team<select name="teamId" required defaultValue={query.teamId ?? ''}><option value="">Select</option>{clubRows.map((team) => <option key={team.id} value={team.id}>{team.name}</option>)}</select></label><label>Name<input name="name" required /></label><label>Jersey number<input name="jerseyNumber" required type="number" min={1} max={99} /></label><label>Position<input name="position" /></label><label>Photo<input name="photo" type="file" accept="image/png,image/jpeg,image/gif" /></label><div className="form-actions"><SubmitButton>Save player</SubmitButton></div></BoundForm></Modal>}

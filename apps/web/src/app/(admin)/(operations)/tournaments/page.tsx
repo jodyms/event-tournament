@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { and, count, desc, eq, gt, gte, ilike, lt, lte, or, type SQL } from 'drizzle-orm';
-import { deleteDraftTournamentAction } from '@/app/figma-actions';
-import { DataTable, RowMenu, StatusPill } from '@/components/data-table';
-import { ListFilters } from '@/components/list-filters';
-import { Modal } from '@/components/modal';
-import { Pager } from '@/components/pager';
-import { BoundForm, SubmitButton } from '@/components/bound-form';
+import { deleteDraftTournamentAction } from '@/app/actions/tournaments';
+import { DataTable, RowMenu, StatusPill } from '@/components/ui/data-table';
+import { ListFilters } from '@/components/ui/list-filters';
+import { Modal } from '@/components/ui/modal';
+import { Pager } from '@/components/ui/pager';
+import { BoundForm, SubmitButton } from '@/components/ui/bound-form';
 import { db } from '@/db/client';
 import { teams, tournaments } from '@/db/schema';
-import { pageWindow, shortDate, tournamentLabel, withParams } from '@/lib/tournament-status';
+import { pageWindow, shortDate, tournamentLabel, withParams } from '@/lib/domain/tournament-status';
 
 function statusFilter(choice: string | undefined): SQL | undefined {
   const now = new Date();
@@ -45,7 +45,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     <header className="figma-heading"><div><h1>Tournaments</h1><p>Create a draft, then finish age categories, stages, pitches, and rules.</p></div><Link className="dark-button" href="/tournaments/new">Add tournament</Link></header>
     <div className="figma-panel module-panel">
       <ListFilters action="/tournaments" query={query.q} placeholder="Search tournament" filters={[{ name: 'status', label: 'All status', value: query.status, options: [{ value: 'DRAFT', label: 'Draft' }, { value: 'SCHEDULED', label: 'Scheduled' }, { value: 'ON_GOING', label: 'On Going' }, { value: 'FINISHED', label: 'Finished' }, { value: 'CANCELLED', label: 'Canceled' }] }]} extra={<><label className="filter-select"><input name="from" type="date" defaultValue={query.from ?? ''} /></label><label className="filter-select"><input name="to" type="date" defaultValue={query.to ?? ''} /></label></>} />
-      <DataTable columns={['Tournament', 'Start', 'End', 'Teams', 'Status', '']} empty="No tournament matches this filter." rows={rows.map((row) => { const label = tournamentLabel(row.status, row.startsAt, row.endsAt); return { id: row.id, cells: [row.name, shortDate(row.startsAt), shortDate(row.endsAt), counts.get(row.id) ?? 0, <StatusPill key={row.id} label={label.label} tone={label.tone} />, <RowMenu items={[{ href: `/tournaments/${row.id}?tab=groups`, label: 'Open' }, { href: `/tournaments/${row.id}/setup?step=details`, label: 'Edit setup' }, ...(row.status === 'DRAFT' ? [{ href: withParams('/tournaments', keep, { discard: row.id }), label: 'Discard draft' }] : [])]} />] }; })} />
+      <DataTable columns={['Tournament', 'Start', 'End', 'Teams', 'Status', '']} empty="No tournament matches this filter." rows={rows.map((row) => { const label = tournamentLabel(row.status, row.startsAt, row.endsAt); return { id: row.id, cells: [<Link className="row-link" href={`/tournaments/${row.id}`} key={row.id}>{row.name}</Link>, shortDate(row.startsAt), shortDate(row.endsAt), counts.get(row.id) ?? 0, <StatusPill key={row.id} label={label.label} tone={label.tone} />, <RowMenu items={[{ href: `/tournaments/${row.id}`, label: 'Open' }, { href: `/tournaments/${row.id}/setup?step=details`, label: 'Edit setup' }, ...(row.status === 'DRAFT' ? [{ href: withParams('/tournaments', keep, { discard: row.id }), label: 'Discard draft' }] : [])]} />] }; })} />
       <Pager page={window.page} pages={window.pages} start={window.start} end={window.end} total={total} href={(page) => withParams('/tournaments', keep, { page: String(page) })} />
     </div>
     {discard && <Modal closeHref={withParams('/tournaments', keep, { discard: null })} title="Discard draft" subtitle={discard.name}><p className="split-note">This deletes the draft tournament and its matches, teams, and players.</p><BoundForm action={deleteDraftTournamentAction}><input name="id" type="hidden" value={discard.id} /><div className="form-actions"><SubmitButton>Discard draft</SubmitButton></div></BoundForm></Modal>}

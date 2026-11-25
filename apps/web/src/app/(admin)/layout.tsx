@@ -1,5 +1,5 @@
-import { AdminShell } from '@/components/admin-shell';
-import { currentAdmin } from '@/lib/auth';
+import { AdminShell } from '@/components/layout/admin-shell';
+import { currentAdmin } from '@/lib/auth/session';
 import { redirect } from 'next/navigation';
 
 export default async function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {

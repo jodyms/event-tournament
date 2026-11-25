@@ -1,2 +1,2 @@
-import { OperationsPage } from '@/components/operations-page';
+import { OperationsPage } from '@/components/operations/operations-page';
 export default function Page() { return <OperationsPage section="dashboard" />; }

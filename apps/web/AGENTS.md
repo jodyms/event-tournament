@@ -15,5 +15,6 @@ Repo-wide rules are in the root `AGENTS.md`. This package overrides them for Nex
 - Run scripts from `apps/web`: `dev`, `typecheck`, `lint`, `test`, `db:generate`, `db:migrate`, `db:seed`, `jobs:work`.
 - `db:reset` destroys the development database. Run it only when asked.
 - Keep the marked Next.js block above. `next dev` rewrites that block.
-- Add mobile endpoints in `src/app/api/v1/[[...path]]/route.ts`. Put integrity rules in `src/lib/services.ts` and `src/lib/competition.ts`.
+- Add mobile endpoints in `src/app/api/v1/[[...path]]/route.ts`. Put integrity rules in `src/lib/domain/services.ts` and `src/lib/domain/competition.ts`.
+- Server Actions live by domain under `src/app/actions/` (`shared.ts` holds non-action helpers and `ActionState`).
 - Zod here is v4. Do not reuse mobile Zod v3 schemas.
