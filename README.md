@@ -40,5 +40,8 @@ Untuk perintah database (`apps/web`):
 npm run db:generate
 npm run db:migrate
 npm run db:seed
+npm run db:seed:demo
 npm run jobs:work
 ```
+
+`db:seed` membuat peran, izin, dan admin. `db:seed:demo` mengisi data turnamen yang lebih besar untuk pengujian dan boleh dijalankan ulang: Piala TYC Jakarta 2026 (berlangsung), Piala TYC Bandung 2025 (arsip), Piala TYC Surabaya 2027 (draf), dan Festival Mini Soccer Depok 2026 (batal). Akun demo memakai `SEED_DEMO_PASSWORD`, atau `SEED_ADMIN_PASSWORD`, atau `ChangeMe123!`: `operator@tyc.local`, `coach@tyc.local`, dan `fan@tyc.local`.

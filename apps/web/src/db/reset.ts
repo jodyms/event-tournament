@@ -10,7 +10,7 @@ async function main() {
     // This is intentionally a development-only command. Drizzle keeps its history in
     // the drizzle schema, so reset both schemas to allow a clean migration replay.
     await client.query('DROP SCHEMA IF EXISTS public CASCADE; CREATE SCHEMA public; DROP SCHEMA IF EXISTS drizzle CASCADE;');
-    console.log('Development database and Drizzle migration metadata have been reset. Run npm run db:migrate && npm run db:seed next.');
+    console.log('Development database and Drizzle migration metadata have been reset. Run npm run db:migrate && npm run db:seed next. Use npm run db:seed:demo when a full local dataset is needed.');
   } finally {
     await client.end();
   }

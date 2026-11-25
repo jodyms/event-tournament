@@ -66,9 +66,13 @@ function paginate<T>(rows: T[], request: Request) {
 }
 
 async function parseBody(request: Request) {
-  return request.json().catch(() => {
+  const text = await request.text();
+  if (!text.trim()) return {};
+  try {
+    return JSON.parse(text) as unknown;
+  } catch {
     throw new AppError('INVALID_JSON', 'Request body must be valid JSON.');
-  });
+  }
 }
 
 export async function GET(request: Request, context: Context) {

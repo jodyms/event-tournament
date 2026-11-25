@@ -14,6 +14,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { isDemoMode } from './src/services/api/mode';
 import { queryClient } from './src/services/queryClient';
+import { acceptedSession } from './src/services/storage/acceptedSession';
 import { sessionStorage } from './src/services/storage/session';
 import { colors, fonts } from './src/design-system/theme';
 import { useAppStore } from './src/store/appStore';
@@ -41,7 +42,17 @@ export default function App() {
   });
 
   useEffect(() => {
-    sessionStorage.read().then(hydrateSession);
+    let active = true;
+    sessionStorage.read().then(async (stored) => {
+      const session = acceptedSession(stored, isDemoMode());
+      if (stored && !session) await sessionStorage.clear();
+      if (active) hydrateSession(session);
+    }).catch(() => {
+      if (active) hydrateSession(null);
+    });
+    return () => {
+      active = false;
+    };
   }, [hydrateSession]);
 
   if (!fontsLoaded || !hydrated) {

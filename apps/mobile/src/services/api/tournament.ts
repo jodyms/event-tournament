@@ -113,7 +113,7 @@ export async function submitPlayer(teamId: ID, player: { name: string; position:
 
 export async function setFavorite(teamId: ID, favorite: boolean): Promise<void> {
   if (isDemoMode()) return;
-  await apiFetch(`/me/favorite-teams/${teamId}`, { method: favorite ? 'POST' : 'DELETE' });
+  await apiFetch(`/me/favorite-teams/${teamId}`, favorite ? { method: 'POST', body: JSON.stringify({}) } : { method: 'DELETE' });
 }
 
 export async function getFavoriteTeams(): Promise<Team[]> {

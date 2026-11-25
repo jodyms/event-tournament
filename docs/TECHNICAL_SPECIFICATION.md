@@ -66,6 +66,7 @@ Next.js saat ini berfungsi sebagai modular monolith: admin UI, Server Actions, m
 | Admin typecheck/test | `npm run typecheck --workspace=@kickzone/web`, `npm test --workspace=@kickzone/web` |
 | Migration | `npm run db:migrate` |
 | Seed | `npm run db:seed` |
+| Demo data | `npm run db:seed:demo` |
 | Worker | `npm run jobs:work` |
 
 ## 4. Repository structure

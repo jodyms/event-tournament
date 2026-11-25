@@ -21,7 +21,11 @@ export function useFavorites() {
   return {
     teams,
     isLoading: query.isLoading,
-    toggle: (team: Team) => mutation.mutate({ team, favorite: !teams.some((item) => item.id === team.id) }),
+    isError: query.isError,
+    error: query.error,
+    mutationError: mutation.error,
+    refetch: () => query.refetch(),
+    toggle: (team: Team) => mutation.mutateAsync({ team, favorite: !teams.some((item) => item.id === team.id) }).then(() => true, () => false),
     includes: (teamId: string) => teams.some((team) => team.id === teamId),
   };
 }

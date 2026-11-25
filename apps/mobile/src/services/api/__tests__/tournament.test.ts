@@ -2,7 +2,7 @@ jest.mock('../../storage/session', () => ({
   sessionStorage: { read: jest.fn(async () => null), write: jest.fn(), clear: jest.fn() },
 }));
 
-import { getHome, submitCoachNames, submitJerseys, submitPlayer } from '../tournament';
+import { getHome, setFavorite, submitCoachNames, submitJerseys, submitPlayer } from '../tournament';
 
 function json(body: unknown) {
   return { ok: true, status: 200, json: async () => body };
@@ -33,6 +33,19 @@ describe('tournament live client', () => {
     expect(JSON.parse(bodies[0] ?? '{}')).toEqual({ names: ['Jordan Coach', 'Alex Morgan'] });
     expect(JSON.parse(bodies[1] ?? '{}')).toEqual({ home: 'Hijau', away: 'Putih' });
     expect(JSON.parse(bodies[2] ?? '{}')).toEqual({ name: 'Raka', position: 'Gelandang', jerseyNumber: 8 });
+  });
+
+  it('posts an empty JSON object when saving a favorite team', async () => {
+    const calls: Array<{ url: string; method: string; body: string | undefined }> = [];
+    globalThis.fetch = jest.fn(async (input, init) => {
+      calls.push({ url: String(input), method: String(init?.method), body: init?.body ? String(init.body) : undefined });
+      return json({ data: { teamId: 'team-1', favorited: init?.method !== 'DELETE' }, meta: {} });
+    }) as unknown as typeof fetch;
+    await setFavorite('team-1', true);
+    await setFavorite('team-1', false);
+    expect(calls[0]).toMatchObject({ method: 'POST', body: '{}' });
+    expect(calls[0]?.url).toContain('/me/favorite-teams/team-1');
+    expect(calls[1]).toMatchObject({ method: 'DELETE', body: undefined });
   });
 
   it('maps the home payload onto mobile match statuses', async () => {

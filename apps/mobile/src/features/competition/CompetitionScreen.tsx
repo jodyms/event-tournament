@@ -3,14 +3,15 @@ import { useQuery } from '@tanstack/react-query';
 import { useNavigation, type NavigationProp } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { AppHeader, Sheet, Screen } from '../../components';
+import { AppHeader, EmptyState, PrimaryButton, Sheet, Screen } from '../../components';
 import { colors, fonts, radius, spacing } from '../../design-system/theme';
 import type { RootStackParamList } from '../../navigation/types';
+import { getApiErrorMessage } from '../../services/api/client';
 import { getAgeGroups, getStages } from '../../services/api/tournament';
 
 export function CompetitionScreen() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
-  const ageGroupsQuery = useQuery({ queryKey: ['ageGroups', 'current'], queryFn: () => getAgeGroups() });
+  const ageGroupsQuery = useQuery({ queryKey: ['ageGroups', 'current'], queryFn: () => getAgeGroups(), refetchOnMount: 'always' });
   const ageGroups = ageGroupsQuery.data ?? [];
   const [ageGroupId, setAgeGroupId] = useState<string | null>(null);
   const selectedAge = ageGroups.find((item) => item.id === ageGroupId) ?? ageGroups[0];
@@ -19,8 +20,11 @@ export function CompetitionScreen() {
   const [stageId, setStageId] = useState<string | null>(null);
   const selectedStage = stages.find((item) => item.id === stageId) ?? stages[0];
   const [selecting, setSelecting] = useState<'age' | 'group' | null>(null);
-  const age = selectedAge?.name ?? 'Loading age groups…';
-  const group = selectedStage?.name ?? 'Loading groups…';
+  const age = ageGroupsQuery.isLoading ? 'Memuat kelompok umur…' : ageGroupsQuery.isError ? 'Kelompok umur gagal dimuat' : selectedAge?.name ?? 'Belum ada kelompok umur';
+  const group = ageGroupsQuery.isLoading || stagesQuery.isLoading ? 'Memuat grup…' : stagesQuery.isError ? 'Grup gagal dimuat' : selectedStage?.name ?? 'Belum ada grup';
+  const options = selecting === 'age' ? ageGroups : stages;
+  const listPending = selecting === 'age' ? ageGroupsQuery.isLoading : stagesQuery.isLoading;
+  const listError = selecting === 'age' ? ageGroupsQuery.error : stagesQuery.error;
   return (
     <Screen>
       <AppHeader title="Competition" onBack={() => navigation.goBack()} />
@@ -36,10 +40,17 @@ export function CompetitionScreen() {
         <View style={styles.flex}><Text style={styles.openTitle}>Open standings & matches</Text><Text style={styles.openText}>View the table and fixtures for {group}.</Text></View>
         <Ionicons name="arrow-forward" size={24} color={colors.brand} />
       </Pressable>
+      {ageGroupsQuery.isError ? <EmptyState title="Kompetisi gagal dimuat" message={getApiErrorMessage(ageGroupsQuery.error)} action={<PrimaryButton label="Coba lagi" onPress={() => void ageGroupsQuery.refetch()} />} /> : null}
+      {!ageGroupsQuery.isLoading && !ageGroupsQuery.isError && ageGroups.length === 0 ? <EmptyState title="Belum ada kompetisi" message="Kelompok umur muncul setelah turnamen dipublikasikan." /> : null}
+      {selectedAge && stagesQuery.isError ? <EmptyState title="Grup gagal dimuat" message={getApiErrorMessage(stagesQuery.error)} action={<PrimaryButton label="Coba lagi" onPress={() => void stagesQuery.refetch()} />} /> : null}
+      {selectedAge && !stagesQuery.isLoading && !stagesQuery.isError && stages.length === 0 ? <EmptyState title="Belum ada grup" message="Grup dan babak muncul setelah stage dipublikasikan." /> : null}
       <View style={styles.note}><Ionicons name="information-circle-outline" color={colors.muted} size={18} /><Text style={styles.noteText}>Standings are updated from the official competition feed.</Text></View>
       <Sheet visible={selecting !== null} title={selecting === 'age' ? 'Select age group' : 'Select stage / group'} onClose={() => setSelecting(null)}>
         <View style={styles.sheetList}>
-          {(selecting === 'age' ? ageGroups : stages).map((item) => (
+          {listPending ? <Text style={styles.optionText}>Memuat…</Text> : null}
+          {listError ? <EmptyState title="Gagal memuat" message={getApiErrorMessage(listError)} action={<PrimaryButton label="Coba lagi" onPress={() => void (selecting === 'age' ? ageGroupsQuery.refetch() : stagesQuery.refetch())} />} /> : null}
+          {!listPending && !listError && options.length === 0 ? <Text style={styles.optionText}>{selecting === 'age' ? 'Belum ada kelompok umur.' : 'Belum ada grup.'}</Text> : null}
+          {options.map((item) => (
             <Pressable key={item.id} onPress={() => { if (selecting === 'age') { setAgeGroupId(item.id); setStageId(null); } else setStageId(item.id); setSelecting(null); }} style={({ pressed }) => [styles.option, pressed && styles.pressed]}>
               <Text style={styles.optionText}>{item.name}</Text><Ionicons name={(selecting === 'age' ? selectedAge?.id === item.id : selectedStage?.id === item.id) ? 'checkmark-circle' : 'chevron-forward'} color={(selecting === 'age' ? selectedAge?.id === item.id : selectedStage?.id === item.id) ? colors.brand : colors.muted} size={23} />
             </Pressable>

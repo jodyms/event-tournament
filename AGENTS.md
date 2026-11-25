@@ -38,6 +38,7 @@ npm test
 npm run db:generate
 npm run db:migrate
 npm run db:seed
+npm run db:seed:demo
 npm run db:reset
 npm run jobs:work
 ```
@@ -81,7 +82,7 @@ Auth:
 
 - Admin session cookie is `tyc_admin_session` (httpOnly, 30 minute idle). Roles are `SUPER_ADMIN` and `OPERATOR`. Permissions are string codes such as `match.score`. `SUPER_ADMIN` is seeded with every permission, not a magic `*` grant.
 - Mobile access tokens are `Bearer` payloads signed with `SESSION_SECRET`. Refresh tokens are stored hashed. Coach routes must use `requireCoach(request, teamId)`.
-- Seeded local admin defaults to `admin@tyc.local` / `ChangeMe123!` unless `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` are set. Do not commit `.env` or real secrets.
+- Seeded local admin defaults to `admin@tyc.local` / `ChangeMe123!` unless `SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD` are set. Do not commit `.env` or real secrets. `npm run db:seed:demo` reloads a large local dataset (published Jakarta cup, archived Bandung, draft Surabaya, cancelled Depok) and can be re-run. It does not replace the minimal `db:seed`.
 
 Public reads only return published tournaments, published stages, approved players, and non-deleted published news. Live home and live match payloads set `meta.pollIntervalSeconds` to 30.
 

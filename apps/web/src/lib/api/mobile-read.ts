@@ -67,11 +67,22 @@ function teamBase() {
     .leftJoin(stages, eq(teams.stageId, stages.id));
 }
 
+export function chooseCurrentTournamentId(rows: Array<{ id: string; startsAt: Date; playable: boolean }>): string | null {
+  const ranked = [...rows].sort((left, right) => right.startsAt.getTime() - left.startsAt.getTime() || left.id.localeCompare(right.id));
+  return ranked.find((row) => row.playable)?.id ?? ranked[0]?.id ?? null;
+}
+
 export async function resolveTournamentId(id: string) {
   if (id !== 'current') return id;
-  const [row] = await db.select({ id: tournaments.id }).from(tournaments).where(eq(tournaments.status, 'PUBLISHED')).orderBy(desc(tournaments.startsAt)).limit(1);
-  if (!row) throw new AppError('NOT_FOUND', 'Tournament was not found.', 404);
-  return row.id;
+  const published = await db.select({ id: tournaments.id, startsAt: tournaments.startsAt }).from(tournaments).where(eq(tournaments.status, 'PUBLISHED'));
+  const playableRows = await db.select({ id: tournaments.id }).from(tournaments)
+    .innerJoin(ageGroups, and(eq(ageGroups.tournamentId, tournaments.id), eq(ageGroups.active, true)))
+    .innerJoin(stages, and(eq(stages.ageGroupId, ageGroups.id), eq(stages.published, true)))
+    .where(eq(tournaments.status, 'PUBLISHED'));
+  const playable = new Set(playableRows.map((row) => row.id));
+  const chosen = chooseCurrentTournamentId(published.map((row) => ({ ...row, playable: playable.has(row.id) })));
+  if (!chosen) throw new AppError('NOT_FOUND', 'Tournament was not found.', 404);
+  return chosen;
 }
 
 export async function listTournaments() {

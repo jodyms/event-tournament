@@ -4,6 +4,7 @@ import { login as loginRequest, logout as logoutRequest } from '../services/api/
 import { setSessionExpiredHandler } from '../services/api/client';
 import { isDemoMode } from '../services/api/mode';
 import { queryClient } from '../services/queryClient';
+import { DEMO_ACCESS_TOKEN } from '../services/storage/acceptedSession';
 import { sessionStorage } from '../services/storage/session';
 
 interface AppState {
@@ -26,7 +27,7 @@ export const useAppStore = create<AppState>((set) => ({
   hydrateSession: (session) => set({ session: session?.accessToken ? session : null, hydrated: true }),
   login: async (email, password) => {
     const session: Session = isDemoMode()
-      ? { accessToken: 'demo-access-token', refreshToken: 'demo-refresh-token', expiresAt: Date.now() + 86_400_000, user: { id: 'u1', email, name: 'Jordan Coach', roles: ['USER', 'COACH'] } }
+      ? { accessToken: DEMO_ACCESS_TOKEN, refreshToken: 'demo-refresh-token', expiresAt: Date.now() + 86_400_000, user: { id: 'u1', email, name: 'Jordan Coach', roles: ['USER', 'COACH'] } }
       : await loginRequest(email, password);
     await sessionStorage.write(session);
     set({ session });
